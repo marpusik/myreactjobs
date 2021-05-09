@@ -6,7 +6,7 @@ import './MenuLink.css';
 
 function MenuLink(props) {
   return (
-    <a className="menuLink" href="#">
+    <a className="menuLink" href="tut.by">
 {props.text}
     </a>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductsPrice from '../productsPrice/ProductsPrice';
 
 import './ProductsCard.css';
 
@@ -10,7 +11,7 @@ function ProductsCard() {
     <div className="productsCard">
       <img className="productsImg" src="" alt=""  />
       <h3 className="productsCardtitle">Водонепроницаемый Рюкзак</h3>
-      <span className="productsPrice">9800 </span>
+      <ProductsPrice text="9800"/>
       <button className="productsBtn">
 
       </button>

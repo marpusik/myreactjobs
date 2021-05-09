@@ -35,7 +35,8 @@ function Menu() {
           <MenuLink text="Запчасти"/>
         </li>
 
-        {/* <li className="menuItem">
+
+        <li className="menuItem">
           <MenuLink text="О товаре"/>
         </li>
         <li className="menuItem">
@@ -55,7 +56,7 @@ function Menu() {
         </li>
         <li className="menuItem">
           <MenuLink text="Гарантия"/>
-        </li> */}
+        </li>
 
 
       </ul>
