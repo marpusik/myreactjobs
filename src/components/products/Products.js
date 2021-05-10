@@ -1,6 +1,6 @@
 import React from 'react';
 import PrimaryCard from '../primaryCard/PrimaryCard';
-import ProductsTitle from './../productsTitle/ProductsTitle';
+import ProductsTitle from '../products/productsTitle/ProductsTitle';
 import img1 from './../../assets/images/pages/BoatsCatalog.png';
 
 import './Products.css';
