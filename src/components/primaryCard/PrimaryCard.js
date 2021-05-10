@@ -1,22 +1,28 @@
 import React from 'react';
+import Basket from '../basket/Basket';
 import Heart from '../heart/Heart';
 import Price from '../price/Price';
+import Sale from '../sale/Sale';
 
 import './PrimaryCard.css';
 
 
 
-function PrimaryCard(props) {
+function PrimaryCard({ img, title, price }) {
   return (
 
     <div className="primaryCard">
-      <Heart/>
-      <img className="primaryImg" src={props.img} alt=""  />
-      <h3 className="primaryCardtitle">{props.title}</h3>
-      <Price price={props.price}/>
+      <Sale/>
+      <Heart />
+      <img className="primaryImg" src={img} alt="" />
+      <h3 className="primaryCardtitle">{title}</h3>
+      <Price price={price} />
+      <div className="span primaryPriceNone">нет в наличии</div>
       <button className="primaryBtn">
-
+        <Basket />
       </button>
+      <button className="primaryReport">Сообщить о поступлении</button>
+      <div className="primaryLook">посмотреть товар</div>
 
     </div>
   );
