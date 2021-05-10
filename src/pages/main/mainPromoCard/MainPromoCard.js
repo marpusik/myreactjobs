@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductsPrice from '../../../components/productsPrice/ProductsPrice';
+import Price from '../../../components/price/Price';
 
 
 import './MainPromoCard.css';
@@ -12,7 +12,7 @@ function MainPromoCard() {
     <div className="mainPromoCard">
       <span className="mainMark">акция</span>
 
-      <ProductsPrice text="190 000" />
+      <Price text="190 000" />
 
       <span className="mainPriceOld">225 000 &#8381; </span>
 

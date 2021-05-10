@@ -8,7 +8,7 @@ import MainPromoCard from './mainPromoCard/MainPromoCard';
 function Main() {
   return (
     <main className="main">
-      
+
       <div className="mainPromo">
         <img className="mainImg" src="" alt=""/>
         <MainPromoCard/>

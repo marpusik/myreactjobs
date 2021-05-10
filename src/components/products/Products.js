@@ -1,12 +1,16 @@
 import React from 'react';
-import ProductsCard from '../productsCard/ProductsCard';
+import PrimaryCard from '../primaryCard/PrimaryCard';
 import ProductsTitle from './../productsTitle/ProductsTitle';
+import img1 from './../../assets/images/pages/BoatsCatalog.png';
 
 import './Products.css';
 
 
 
 function Products() {
+
+
+
   return (
     <div className="products">
       <ProductsTitle text="Популярные товары" />
@@ -20,7 +24,9 @@ function Products() {
         <a className="productsLink" href="tut.by">аксессуары </a>
       </nav>
       <div className="productsCard">
-        <ProductsCard />
+        <PrimaryCard img={img1} title="Водонепроницаемый Рюкзак" price="9800"/>
+        <PrimaryCard  />
+        <PrimaryCard  />
       </div>
 
 

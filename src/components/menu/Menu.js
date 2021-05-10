@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuLink from '../menuLink/MenuLink';
+import MenuLink from './menuLink/MenuLink';
 
 import './Menu.css';
 
@@ -7,7 +7,7 @@ import './Menu.css';
 function Menu() {
   return (
     <nav className="menu">
-      <ul className="menuLlist">
+      <ul className="menuList">
 
 
         <li className="menuItem">
@@ -33,29 +33,6 @@ function Menu() {
         </li>
         <li className="menuItem">
           <MenuLink text="Запчасти"/>
-        </li>
-
-
-        <li className="menuItem">
-          <MenuLink text="О товаре"/>
-        </li>
-        <li className="menuItem">
-          <MenuLink text="Характеристики"/>
-        </li>
-        <li className="menuItem">
-          <MenuLink text="Отзывы"/>
-        </li>
-        <li className="menuItem">
-          <MenuLink text="Самовывоз"/>
-        </li>
-        <li className="menuItem">
-          <MenuLink text="Доставка"/>
-        </li>
-        <li className="menuItem">
-          <MenuLink text="Сервис"/>
-        </li>
-        <li className="menuItem">
-          <MenuLink text="Гарантия"/>
         </li>
 
 

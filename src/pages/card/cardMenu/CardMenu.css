@@ -1,9 +1,9 @@
-.menu {
+.cardMenu {
   width: 100%;
   background-color: #F0F0F4;
 }
 
-.menuList {
+.cardMenulist {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-.menuItem {
+.cardMenuItem {
   padding: 10px;
   margin: 10px;
 }
