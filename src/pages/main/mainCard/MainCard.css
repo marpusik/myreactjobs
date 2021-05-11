@@ -1,0 +1,16 @@
+
+
+.mainCard {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 370px;
+  height: 130px;
+
+  border: 2px solid black;
+}
+
+
+
+
+

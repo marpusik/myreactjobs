@@ -11,12 +11,11 @@ import './Products.css';
 
 
 
-function Products() {
+function Products(props) {
 
   return (
     <div className="products">
-      <ProductsTitle text="Популярные товары"  />
-      <ProductsTitle text="С этим товаром покупают" />
+      <ProductsTitle text={props.text}/>
       <nav className="productsMenu">
         <a className="productsLink" href="tut.by">запчасти</a>
         <a className="productsLink" href="tut.by">моторы</a>
@@ -25,7 +24,7 @@ function Products() {
         <a className="productsLink" href="tut.by">инструменты</a>
         <a className="productsLink" href="tut.by">аксессуары </a>
       </nav>
-      <div className="productsCard">
+      <div className="productsCards">
         <PrimaryCard img={bag} title="Водонепроницаемый Рюкзак" price="9 800"/>
         <PrimaryCard img={airflow} title="Спасательный жилет BRP Men's Airflow PFD
 " price="6 900"/>
