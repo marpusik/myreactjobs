@@ -1,0 +1,29 @@
+.primaryCard {
+  position: relative;
+
+  width: 270px;
+  height: 400px;
+
+  border: 2px solid black;
+
+}
+.primaryLook {
+  display: none;
+  position: absolute;
+}
+
+.primaryCard:hover .primaryLook {
+  display: block;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+.products {
+  width: 100%;
+
+}
+
+.productsCards {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
