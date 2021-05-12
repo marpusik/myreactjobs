@@ -44,3 +44,23 @@
   grid-template-columns: repeat(auto-fill, 370px)
 }
 
+
+.mainShowBtn {
+  width: 250px;
+  height: 50px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+ background-color: #1C62CD;
+}
+
+.bannerUtv {
+  transform: rotateY(180deg);
+}
+
+

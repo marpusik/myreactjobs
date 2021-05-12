@@ -17,7 +17,7 @@ function PrimaryCard({ img, title, price }) {
       <img className="primaryImg" src={img} alt="" />
       <h3 className="primaryCardtitle">{title}</h3>
       <Price price={price} />
-      <div className="span primaryPriceNone">нет в наличии</div>
+      <span className="primaryPriceNone">нет в наличии</span>
       <button className="primaryBtn">
         <Basket />
       </button>
@@ -29,3 +29,6 @@ function PrimaryCard({ img, title, price }) {
 }
 
 export default PrimaryCard;
+
+
+
