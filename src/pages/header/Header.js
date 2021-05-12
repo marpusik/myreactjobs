@@ -32,7 +32,8 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <img className="headerLogo" src={logo} alt="" />
+      <a className="headerLogo" href="##"><img className="logoImg" src={logo} alt="" /></a>
+      
       
       <nav className="headerNav">
       <address className="headerAdress">
