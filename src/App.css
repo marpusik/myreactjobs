@@ -1,5 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .App {
-  font-family: SF Pro Display;
+  font-family: SF Pro Display, sans-serif;
 }
 
 .container {
