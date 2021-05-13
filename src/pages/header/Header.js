@@ -6,7 +6,7 @@ import location from "./../../assets/icons/LocationIcon.svg";
 import Heart from "../../components/heart/Heart";
 import Basket from "../../components/basket/Basket";
 import personal from "./../../assets/icons/PersonalIcon.svg";
-import Menu from "../../components/menu/Menu";
+import Menu from "./menu/Menu";
 
 function Header() {
   return (
