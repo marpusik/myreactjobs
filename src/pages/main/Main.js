@@ -4,12 +4,12 @@ import Breadcrumb from './../../components/breadcrumb/Breadcrumb';
 import MainPromoCard from './mainPromoCard/MainPromoCard';
 import slider from './../../assets/images/pages/slider.jpg';
 import MainCard from './mainCard/MainCard';
-import atv from './../../assets/images/pages/atv.png'
-import pwc from './../../assets/images/pages/pwc.png'
-import boat from './../../assets/images/pages/boats.png'
-import snow from './../../assets/images/pages/snowmobiles.png'
-import utv from './../../assets/images/pages/utv.png'
-import engine from './../../assets/images/pages/engines.png'
+import atv from './../../assets/images/pages/atv.png';
+import pwc from './../../assets/images/pages/pwc.png';
+import boat from './../../assets/images/pages/boats.png';
+import snow from './../../assets/images/pages/snowmobiles.png';
+import utv from './../../assets/images/pages/utv.png';
+import engine from './../../assets/images/pages/engines.png';
 import Products from '../../components/products/Products';
 
 
