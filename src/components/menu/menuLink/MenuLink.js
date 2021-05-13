@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './MenuLink.css';
+import s from './MenuLink.module.scss';
 
 
 
 function MenuLink(props) {
   return (
-    <a className="menuLink" href="tut.by">
+    <a className={s.link} href="tut.by">
 {props.text}
     </a>
 

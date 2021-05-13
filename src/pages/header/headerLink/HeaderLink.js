@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './HeaderLink.css';
+import s from './HeaderLink.module.scss';
 
 
 
 function HeaderLink(props) {
   return (
-    <a className="headerLink" href={props.href} style={props.style}>
+    <a className={s.link} href={props.href} style={props.style}>
 {props.text}
     </a>
 
