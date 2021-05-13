@@ -6,9 +6,11 @@ import location from "./../../assets/icons/LocationIcon.svg";
 import Heart from "../../components/heart/Heart";
 import Basket from "../../components/basket/Basket";
 import personal from "./../../assets/icons/PersonalIcon.svg";
+import Menu from "../../components/menu/Menu";
 
 function Header() {
   return (
+    <>
     <header className="header">
       <nav className="headerMenu">
         <ul className="headerList">
@@ -56,8 +58,9 @@ function Header() {
           </li>
         </ul>
       </nav>  
-      
     </header>
+    <Menu/>
+   </>
   );
 }
 

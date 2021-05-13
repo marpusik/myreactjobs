@@ -8,15 +8,15 @@ import Main from './pages/main/Main';
 function App() {
 
 
-    return (
-        <div className="App">
-            <div className="container">
+  return (
+    <div className="App">
+      <div className="container">
 
-                <Header/>
-                <Main/>
-            </div>
-        </div>
-    );
+        <Header />
+        <Main />
+      </div>
+    </div>
+  );
 }
 
 export default App;
