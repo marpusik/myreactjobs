@@ -5,13 +5,13 @@
   display: grid;
   grid-template-columns: 1fr 270px 1fr;
 }
-.headerMenu {
+.menu {
   align-self: center;
 }
-.headerLogo {
+.logo {
   justify-self: center;
 }
-.headerList {
+.menuList {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -19,25 +19,25 @@
   padding: 0;
   margin: 0;
 }
-.headerNav {
+.social {
   display: flex;
   justify-content: space-between;
   align-self: center;
 }
-.headerAdress {
+.adress {
   font-style: normal;
   padding: 0;
   margin: 0;
   align-self: center;
 }
-.headerIcons {
+.socialList {
   display: flex;
   list-style: none;
 }
-.headerIcon:nth-child(2) {
+.socialItem:nth-child(2) {
   padding-left: 10px;
 }
-.headerIcon:last-child {
+.socialItem:last-child {
   padding-left: 10px;
 }
 
