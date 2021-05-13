@@ -1,15 +1,9 @@
 import React from 'react';
-
-
 import './Main.css';
-
 import Breadcrumb from './../../components/breadcrumb/Breadcrumb';
-import Menu from './../../components/menu/Menu';
-
 import MainPromoCard from './mainPromoCard/MainPromoCard';
 import slider from './../../assets/images/pages/slider.jpg';
 import MainCard from './mainCard/MainCard';
-
 import atv from './../../assets/images/pages/ATVsCatalogBaner.png'
 import pwc from './../../assets/images/pages/PWCsCatalog.png'
 import boat from './../../assets/images/pages/BoatsCatalog.png'
@@ -22,7 +16,6 @@ import Products from '../../components/products/Products';
 function Main() {
   return (
     <main className="main">
-      <Menu />
       <Breadcrumb />
 
 
