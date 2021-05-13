@@ -12,9 +12,10 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-<Footer/>
+
         <Header />
         <Main />
+          <Footer/>
       </div>
     </div>
   );
