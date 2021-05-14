@@ -2,15 +2,17 @@ import React from 'react';
 import Price from '../../../components/price/Price';
 
 
-import './MainPromoCard.css';
 import suzuki from './../../../assets/images/shopItems/engine/suzuki.png';
 
+import s from './PromoCard.module.scss';
 
 
-function MainPromoCard() {
+
+
+function PromoCard() {
   return (
 
-    <div className="mainPromoCard">
+    <div className={s.promoCard}>
       <span className="mainMark">акция</span>
 
       <Price text="190 000" />
@@ -30,4 +32,4 @@ Suzuki DF9.9BRS</h3>
   );
 }
 
-export default MainPromoCard;
+export default PromoCard;

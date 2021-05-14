@@ -9,7 +9,11 @@ import s from './Heart.module.scss';
 
 function Heart() {
   return (
-    <img className={s.heart} src={heart} alt=""  />
+
+    <button className={s.heart}>
+      <img className={s.img} src={heart} alt="heart"  />
+    </button>
+
   );
 }
 

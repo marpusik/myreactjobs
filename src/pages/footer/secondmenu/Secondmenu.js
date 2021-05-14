@@ -5,13 +5,13 @@ function Secondmenu() {
         <><h3 className="secondmenu__title">Интернет-магазин</h3>
             <ul className="secondmenu__list">
                 <li className="secondmenu__item"><a className="secondmenu__link"
-                                              href="">Доставка и самовывоз</a></li>
+                                              href="ya.ru">Доставка и самовывоз</a></li>
                 <li className="secondmenu__item"><a className="secondmenu__link"
-                                              href="">Оплата</a></li>
+                                              href="ya.ru">Оплата</a></li>
                 <li className="secondmenu__item"><a className="secondmenu__link"
-                                              href="">Возврат-обмен</a></li>
+                                              href="ya.ru">Возврат-обмен</a></li>
                 <li className="secondmenu__item"><a className="secondmenu__link"
-                                              href="">Новости</a></li>
+                                              href="ya.ru">Новости</a></li>
             </ul></>
     );
 }

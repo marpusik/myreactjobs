@@ -1,16 +1,17 @@
 import React from 'react';
-import Card from '../card/Card';
-import Title from '../title/Title';
+
+import Card from './../../../components/card/Card';
+import Title from './../../../components/title/Title';
 import Menu from './menu/Menu'
 
-import bag from '../../assets/images/shopItems/spare-parts/bag.png';
-import airflow from './../../assets/images/shopItems/spare-parts/airflow.png';
-import brp from './../../assets/images/shopItems/spare-parts/brp.png';
-import equipment from './../../assets/images/shopItems/spare-parts/equipment.png';
-import audio from './../../assets/images/shopItems/spare-parts/audio.png';
-import echomap from './../../assets/images/shopItems/spare-parts/echomap.png';
-import key from './../../assets/images/shopItems/spare-parts/key.png';
-import suit from './../../assets/images/shopItems/spare-parts/suit.png';
+import bag from '../../../assets/images/shopItems/spare-parts/bag.png';
+import airflow from '../../../assets/images/shopItems/spare-parts/airflow.png';
+import brp from '../../../assets/images/shopItems/spare-parts/brp.png';
+import equipment from '../../../assets/images/shopItems/spare-parts/equipment.png';
+import audio from '../../../assets/images/shopItems/spare-parts/audio.png';
+import echomap from '../../../assets/images/shopItems/spare-parts/echomap.png';
+import key from '../../../assets/images/shopItems/spare-parts/key.png';
+import suit from '../../../assets/images/shopItems/spare-parts/suit.png';
 
 
 import s from './Products.module.scss';

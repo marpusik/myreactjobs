@@ -14,7 +14,7 @@ function Card({ img, title, price }) {
     <div className={s.card}>
       <Sale/>
       <Heart />
-      <img className={s.img} src={img} alt="" />
+      <img className={s.img} src={img} alt="img" />
       <h3 className={s.title}>{title}</h3>
       <Price price={price} />
       <span className={s.priceNone}>нет в наличии</span>

@@ -1,5 +1,13 @@
 .heart {
-  text-align: center;
+  
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 

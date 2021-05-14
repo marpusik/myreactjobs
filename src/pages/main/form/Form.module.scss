@@ -1,0 +1,30 @@
+
+
+.form {
+  position: relative;
+
+}
+
+
+
+.radioBtns input[type=radio] {
+  display: none;
+}
+
+.radioBtns label {
+  display: inline-block;
+
+  cursor: pointer;
+  padding: 0px 15px;
+  margin-bottom: 15px;
+  line-height: 34px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.radioBtns input[type=radio]:checked+label {
+  background-color: #F0F0F4;
+}
+
+
+

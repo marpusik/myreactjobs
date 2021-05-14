@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-import './MainCard.css';
+import s from './Card.module.scss';
 
 
-function MainCard({ title, img }) {
+function Card({ title, img }) {
   return (
 
-    <div className="mainCard">
+    <div className={s.card}>
 
       <h3 className="mainCaption">{title}</h3>
 
@@ -17,4 +17,4 @@ function MainCard({ title, img }) {
   );
 }
 
-export default MainCard;
+export default Card;
