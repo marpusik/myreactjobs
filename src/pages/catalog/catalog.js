@@ -1,12 +1,12 @@
 
 import React from 'react';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
-import ProductsTitle from '../../components/products/productsTitle/ProductsTitle';
+import Title from '../../components/title/Title';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import BorderAllIcon from '@material-ui/icons/BorderAll';
 import s from './catalog.module.scss';
 import SelectParam from './selectParam/selectParam';
-import PrimaryCard from '../../components/primaryCard/PrimaryCard';
+import Card from '../../components/card/Card';
 import bag from '../../assets/images/shopItems/spare-parts/bag.png';
 import airflow from './../../assets/images/shopItems/spare-parts/airflow.png';
 import brp from './../../assets/images/shopItems/spare-parts/brp.png';
@@ -20,27 +20,27 @@ function Catalog() {
    <>
    <main className={s.catalog}>
      <Breadcrumb />
-     <ProductsTitle 
+     <Title
      text="Гидроциклы"
      />
      <div className={s.wrapperHead}>
      <div className={s.selectParam}>
-       <SelectParam 
+       <SelectParam
        text="Полноприводные"
        />
-        <SelectParam 
+        <SelectParam
        text="от 5000"
        />
-      <SelectParam 
+      <SelectParam
        text="BRP"
        />
-        <SelectParam 
+        <SelectParam
        text="еще"
        />
        </div>
        <form className={s.list}>
          <select className={s.items}>
-        
+
             <option className={s.item}>По популярности</option>
             <option className={s.item}>По рейтингу</option>
             <option className={s.item}>Новинки</option>
@@ -54,18 +54,18 @@ function Catalog() {
             CONTENT FILTER
         </aside>
         <div className={s.card}>
-        <PrimaryCard img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-        <PrimaryCard img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-        <PrimaryCard img={brp} title="BRP Audio-Premium System" price="68 000" />
-        <PrimaryCard img={equipment} title="Спасательное снаряжение" />
-        <PrimaryCard img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-        <PrimaryCard img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-        <PrimaryCard img={brp} title="BRP Audio-Premium System" price="68 000" />
-        <PrimaryCard img={equipment} title="Спасательное снаряжение" />
-        <PrimaryCard img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-        <PrimaryCard img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-        <PrimaryCard img={brp} title="BRP Audio-Premium System" price="68 000" />
-        <PrimaryCard img={equipment} title="Спасательное снаряжение" />
+        <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
+        <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
+        <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
+        <Card img={equipment} title="Спасательное снаряжение" />
+        <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
+        <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
+        <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
+        <Card img={equipment} title="Спасательное снаряжение" />
+        <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
+        <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
+        <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
+        <Card img={equipment} title="Спасательное снаряжение" />
         </div>
      </section>
      <div className={s.pagination}>
