@@ -1,14 +1,15 @@
 import React from 'react';
 
-import './Basket.css';
+import basket from './../../assets/icons/BasketIcon.svg';
 
-import basket from './../../assets/icons/BasketIcon.svg'
+import s from './Basket.module.scss';
+
 
 
 
 function Basket() {
   return (
-    <img className="basket" src={basket} alt=""  />
+    <img className={s.basket} src={basket} alt="basket"  />
   );
 }
 
