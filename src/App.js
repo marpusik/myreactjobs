@@ -3,8 +3,9 @@ import './App.css';
 import Header from './pages/header/Header';
 
 
-import Main from './pages/main/Main';
+// import Main from './pages/main/Main';
 import Footer from "./pages/footer/Footer";
+import Catalog from './pages/catalog/catalog';
 
 function App() {
 
@@ -14,9 +15,14 @@ function App() {
       <div className="container">
 
         <Header />
+<<<<<<< HEAD
         <Main />
         <Footer />
         
+=======
+        <Catalog />
+          <Footer/>
+>>>>>>> origin/main
       </div>
     </div>
   );
