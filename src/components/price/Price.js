@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './Price.css';
+import s from './Price.module.scss';
 
 
 
 function Price(props) {
   return (
-    <span className="price">{props.price} &#8381; </span>
+    <span className={s.price}>{props.price} &#8381; </span>
 
   );
 }

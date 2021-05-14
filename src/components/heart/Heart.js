@@ -1,14 +1,15 @@
 import React from 'react';
 
-import './Heart.css';
-
 import heart from './../../assets/icons/LikeIcon.svg'
+
+import s from './Heart.module.scss';
+
 
 
 
 function Heart() {
   return (
-    <img className="heart" src={heart} alt=""  />
+    <img className={s.heart} src={heart} alt=""  />
   );
 }
 

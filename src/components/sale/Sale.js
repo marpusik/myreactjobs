@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './Sale.css';
+import s from './Sale.module.css';
 
 
 
 
 function Sale() {
   return (
-    <span className="sale">SALE</span>
+    <span className={s.sale}>SALE</span>
   );
 }
 
