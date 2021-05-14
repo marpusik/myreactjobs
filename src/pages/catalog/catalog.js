@@ -20,10 +20,11 @@ function Catalog() {
    <>
    <main className={s.catalog}>
      <Breadcrumb />
+     <article className={s.product}>
      <Title
      text="Гидроциклы"
      />
-     <div className={s.wrapperHead}>
+     <header className={s.wrapperHead}>
      <div className={s.selectParam}>
        <SelectParam
        text="Полноприводные"
@@ -40,7 +41,6 @@ function Catalog() {
        </div>
        <form className={s.list}>
          <select className={s.items}>
-
             <option className={s.item}>По популярности</option>
             <option className={s.item}>По рейтингу</option>
             <option className={s.item}>Новинки</option>
@@ -48,7 +48,7 @@ function Catalog() {
          <BorderAllIcon />
          <FormatListBulletedIcon color="disabled"  />
        </form>
-     </div>
+     </header>
      <section className={s.content}>
         <aside className={s.filter}>
             CONTENT FILTER
@@ -68,10 +68,11 @@ function Catalog() {
         <Card img={equipment} title="Спасательное снаряжение" />
         </div>
      </section>
-     <div className={s.pagination}>
+     <footer className={s.pagination}>
      <Pagination count={10}  shape="rounded" hidePrevButton hideNextButton color="primary"/>
 
-     </div>
+     </footer>
+     </article>
    </main>
    </>
   );

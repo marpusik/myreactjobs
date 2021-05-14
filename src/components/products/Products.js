@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../card/Card';
 import Title from '../title/Title';
-import Menu from './menu/Menu'
+import Menu from './menu/Menu';
 
 import bag from '../../assets/images/shopItems/spare-parts/bag.png';
 import airflow from './../../assets/images/shopItems/spare-parts/airflow.png';
