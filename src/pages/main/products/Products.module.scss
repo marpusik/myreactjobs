@@ -5,8 +5,10 @@
 
 
 .slider {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fill, 270px);
+
 }
 
 .none {

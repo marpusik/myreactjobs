@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className={s.App}>
-      <div className="container">
+      <div className={s.container}>
 
         <Header />
         <Main />

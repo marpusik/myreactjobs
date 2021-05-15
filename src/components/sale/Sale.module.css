@@ -4,13 +4,12 @@
   width: 65px;
   height: 25px;
 
-  background-color: #1C62CD;
+  font-family: SF Pro Display;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.07em;
+  line-height: 2;
+
+  background-color: #1C62CD;
 }
-
-
-
-
-
-

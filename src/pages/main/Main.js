@@ -9,6 +9,7 @@ import Banner from './banner/Banner';
 
 
 import s from './Main.module.scss';
+import Catalog from './catalog/Catalog';
 
 
 
@@ -25,13 +26,10 @@ function Main() {
 
 
       <div className="search">
-
         <Form />
-
-
-
       </div>
 
+      <Catalog />
 
       <Products text="Популярные товары" />
 

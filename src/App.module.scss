@@ -4,20 +4,23 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-decoration: none;
 }
 
 .App {
   font-family: SF Pro Display, sans-serif;
+  font-size: 10px;
   color: $primary;
+  line-height: 1.2;
+  
+  background-color: #ffffff;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
 
-  max-width: 1170px;
-  width: 100%;
+  max-width: 1200px;
+  // width: 100%;
 }
 
 
