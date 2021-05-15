@@ -46,6 +46,7 @@ function Header() {
         style={{margin:"0"}}
         />
       </address>
+      <nav className={s.socialIcons}>
         <ul className={s.socialList}>
           <li className={s.socialItem}>
             <Heart/>
@@ -57,6 +58,7 @@ function Header() {
             <Basket/>
           </li>
         </ul>
+      </nav>
       </nav>  
     </header>
     <Menu/>
