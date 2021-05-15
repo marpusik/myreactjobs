@@ -18,39 +18,39 @@ import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
 
 function Catalog() {
   return (
-
-    <main className={s.catalog}>
-      <Breadcrumb />
-      <Title
-        text="Гидроциклы"
-      />
-      <div className={s.wrapperHead}>
-        <div className={s.selectParam}>
-          <SelectParam
-            text="Полноприводные"
-          />
-          <SelectParam
-            text="от 5000"
-          />
-          <SelectParam
-            text="BRP"
-          />
-          <SelectParam
-            text="еще"
-          />
-        </div>
-        <form className={s.list}>
-          <select className={s.items}>
-
+   <>
+   <main className={s.catalog}>
+     <Breadcrumb />
+     <article className={s.product}>
+     <Title
+     text="Гидроциклы"
+     />
+     <header className={s.wrapperHead}>
+     <div className={s.selectParam}>
+       <SelectParam
+       text="Полноприводные"
+       />
+        <SelectParam
+       text="от 5000"
+       />
+      <SelectParam
+       text="BRP"
+       />
+        <SelectParam
+       text="еще"
+       />
+       </div>
+       <form className={s.list}>
+         <select className={s.items}>
             <option className={s.item}>По популярности</option>
             <option className={s.item}>По рейтингу</option>
             <option className={s.item}>Новинки</option>
-          </select>
-          <BorderAllIcon />
-          <FormatListBulletedIcon color="disabled" />
-        </form>
-      </div>
-      <section className={s.content}>
+         </select>
+         <BorderAllIcon />
+         <FormatListBulletedIcon color="disabled"  />
+       </form>
+     </header>
+     <section className={s.content}>
         <aside className={s.filter}>
           CONTENT FILTER
         </aside>
@@ -68,13 +68,14 @@ function Catalog() {
           <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
           <Card img={equipment} title="Спасательное снаряжение" />
         </div>
-      </section>
-      <div className={s.pagination}>
-        <Pagination count={10} shape="rounded" hidePrevButton hideNextButton color="primary" />
+     </section>
+     <footer className={s.pagination}>
+     <Pagination count={10}  shape="rounded" hidePrevButton hideNextButton color="primary"/>
 
-      </div>
-    </main>
-
+     </footer>
+     </article>
+   </main>
+   </>
   );
 }
 
