@@ -1,0 +1,26 @@
+.Footer{
+    display: block;
+    background: #f0f0f4;
+}
+.Top{
+    display: flex;
+    justify-content: center;
+}
+.Email{
+}
+.Menu{
+}
+.social__list{
+    display: flex;
+    margin: 80px 10px 80px 100px;
+}
+.social__item{
+    padding-right: 30px;
+}
+.secondmenu__item{
+    padding-top: 5px;
+}
+.contract__list{
+    display: flex;
+    justify-content: center;
+}

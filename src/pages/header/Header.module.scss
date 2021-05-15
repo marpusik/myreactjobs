@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  padding-bottom: 25px;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 270px 1fr;
+}
+.menu {
+  align-self: center;
+}
+.logo {
+  justify-self: center;
+}
+.menuList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.adress {
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+.socialList {
+  display: flex;
+  list-style: none;
+}
+.socialItem:nth-child(2) {
+  padding-left: 10px;
+}
+.socialItem:last-child {
+  padding-left: 10px;
+}
+
+
+
+
+
