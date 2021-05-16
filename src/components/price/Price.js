@@ -6,8 +6,7 @@ import s from './Price.module.scss';
 
 function Price(props) {
   return (
-    <span className={s.price}>{props.price} &#8381; </span>
-
+    <span className={s.price} style={props.style}>{props.price}  </span>
   );
 }
 

@@ -1,3 +1,5 @@
+@import './../../sass/abstracts/vars.scss';
+
 .sale {
   display: inline-block;
 
@@ -11,5 +13,6 @@
   letter-spacing: 0.07em;
   line-height: 2;
 
-  background-color: #1C62CD;
+  background-color: $accent;
+  
 }

@@ -13,9 +13,9 @@ function PromoCard() {
   return (
 
     <div className={s.promoCard}>
-      <span className="mainMark">акция</span>
+      <span className={s.mark}>акция</span>
 
-      <Price text="190 000" />
+      <Price price="190 000 &#8381;" style={{color: "$accent"}} />
 
       <span className="mainPriceOld">225 000 &#8381; </span>
 

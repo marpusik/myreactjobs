@@ -2,11 +2,29 @@
 
 
 .promoCard {
-  color: $accent;
   width: 265px;
   height: 400px;
 
-  border: 2px solid black;
+  color: $primary;
+
+
+  border: 1px solid #CDCDCD;
+  border-radius: $br;
+
+
+
+}
+
+.mark {
+  padding: 8px 10px;
+  font-family: Proxima Nova;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 2;
+
+  background-color: $accent;
 }
 
 

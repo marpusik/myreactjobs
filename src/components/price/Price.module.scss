@@ -1,9 +1,12 @@
+@import './../../sass/abstracts/vars.scss';
+
+
 .price {
 font-family: Barlow;
 font-weight: bold;
 font-size: 30px;
 text-align: center;
-color: #2F3035;
+color: $primary;
 }
 
 
