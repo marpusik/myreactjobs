@@ -1,16 +1,47 @@
-
+@import './../../../../sass/abstracts/vars.scss';
 
 .card {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 
   width: 370px;
   height: 130px;
 
-  border: 2px solid black;
+  padding: 20px;
+
+  background: #FFFFFF;
+  border: 1px solid $borderColor;
+  box-sizing: border-box;
+  border-radius: $br;
+
+  &:hover {
+    color: $accent;
+
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  }
+}
+
+.wrapContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+
+.caption {
+
+  font-family: Barlow;
+  font-weight: bold;
+  font-size: 23px;
 }
 
 
 
+.more {
+  font-family: SF Pro Display;
+  font-size: 14px;
+  color: $lightText;
 
 
+}

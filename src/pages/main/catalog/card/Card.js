@@ -9,9 +9,11 @@ function Card({ title, img }) {
 
     <div className={s.card}>
 
-      <h3 className="mainCaption">{title}</h3>
-
-      <img className="mainImg" src={img} alt="" />
+      <div className={s.wrapContent}>
+        <h3 className={s.caption}>{title}</h3>
+        <a className={s.more} href="tut.by" >Подробнее 	&gt; </a>
+      </div>
+      <img className={s.img} src={img} alt="card" />
 
     </div>
   );
