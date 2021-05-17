@@ -1,5 +1,4 @@
-import React from "react";
-import './Footer.css'
+import s from './Footer.module.scss'
 import Menu from "./menu/Menu";
 import Secondmenu from "./secondmenu/Secondmenu";
 import Contract from "./contract/Сontract";
@@ -8,14 +7,14 @@ import Email from "./email/Email";
 
 function Footer() {
     return (
-        <div className="Footer">
-            <div className="Top">
-                <div className="Email"><Email/></div>
-                <div className="Menu"><Menu/></div>
-                <div className="Secondmenu"><Secondmenu/></div>
-                <div className="Social"><Social/></div>
+        <div className={s.footer}>
+            <div className={s.inner}>
+                <Email/>
+                <Menu/>
+                <Secondmenu/>
+                <Social/>
             </div>
-            <div className="Contract"><Contract/></div>
+            <Contract/>
         </div>
     );
 }
