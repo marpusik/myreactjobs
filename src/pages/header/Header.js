@@ -1,32 +1,32 @@
 import React from "react";
-import "./Header.css";
+import s from "./Header.module.scss";
 import HeaderLink from "./headerLink/HeaderLink";
 import logo from "./../../assets/icons/LogoIcon.svg";
 import location from "./../../assets/icons/LocationIcon.svg";
 import Heart from "../../components/heart/Heart";
 import Basket from "../../components/basket/Basket";
 import personal from "./../../assets/icons/PersonalIcon.svg";
-import Menu from "../../components/menu/Menu";
+import Menu from "./menu/Menu";
 
 function Header() {
   return (
     <>
-    <header className="header">
-      <nav className="headerMenu">
-        <ul className="headerList">
-          <li className="headerItem">
+    <header className={s.header}>
+      <nav className={s.menu}>
+        <ul className={s.menuList}>
+          <li className={s.menuItem}>
             <HeaderLink 
             href="#"
             text="Магазины" 
             />
           </li>
-          <li className="headerItem">
+          <li className={s.menuItem}>
             <HeaderLink 
             href="#"
             text="Акции" 
             />
           </li>
-          <li className="headerItem">
+          <li className={s.menuItem}>
             <HeaderLink 
             href="#"
             text="Доставка и оплата" 
@@ -34,11 +34,11 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <a className="headerLogo" href="##"><img className="logoImg" src={logo} alt="" /></a>
+      <a className={s.logo} href="##"><img className="logoImg" src={logo} alt="" /></a>
       
       
-      <nav className="headerNav">
-      <address className="headerAdress">
+      <nav className={s.social}>
+      <address className={s.adress}>
         <img src={location} alt="location"/>
         <HeaderLink 
         href="#"
@@ -46,17 +46,19 @@ function Header() {
         style={{margin:"0"}}
         />
       </address>
-        <ul className="headerIcons">
-          <li className="headerIcon">
+      <nav className={s.socialIcons}>
+        <ul className={s.socialList}>
+          <li className={s.socialItem}>
             <Heart/>
           </li>
-          <li className="headerIcon">
+          <li className={s.socialItem}>
           <img src={personal} alt=""  />
           </li>
-          <li className="headerIcon">
+          <li className={s.socialItem}>
             <Basket/>
           </li>
         </ul>
+      </nav>
       </nav>  
     </header>
     <Menu/>
