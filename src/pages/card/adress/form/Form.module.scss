@@ -1,0 +1,104 @@
+@import './../../../../sass/abstracts/vars.scss';
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px 40px;
+
+}
+
+label {
+  margin-right: 20px;
+
+  font-family: SF Pro Display;
+  font-size: 17px;
+  color: $primary-opacity;
+
+}
+
+.input {
+  width: 313px;
+  height: 33px;
+
+  padding-left: 20px;
+
+  background: $bg url(./../../../../assets/icons/Search.svg) no-repeat 95%;
+  border-radius: $br;
+  border: none;
+
+  &::placeholder {
+    width: 0px;
+    height: 15px;
+
+    border: 1px solid $lightText;
+  }
+
+
+}
+
+
+
+// .radioBtns {
+
+
+//   & input[type=radio] {
+//     display: none;
+//   }
+
+
+//   & label {
+//     display: inline-block;
+
+//     padding: 10px 25px;
+//     margin-bottom: 25px;
+
+//     border-radius: 5px;
+//     font-family: SF Pro Display;
+//     font-size: 20px;
+//     cursor: pointer;
+
+//   }
+
+//   & input[type=radio]:checked+label {
+//     background-color: #F0F0F4;
+//     font-weight: bold;
+//   }
+
+// }
+
+// .wrapInput {
+//   position: relative;
+// }
+
+// .input {
+//   width: 100%;
+
+//   padding: 15px 20px;
+
+//   background: $bg;
+//   border-radius: $br;
+//   border: none;
+
+//   &::placeholder {
+
+//     font-family: SF Pro Display;
+//     font-size: 16px;
+//     color: #656464;
+//   }
+// }
+
+// .searchBtn {
+//   position: absolute;
+
+//   height: 100%;
+//   width: 145px;
+
+//   color: #ffffff;
+//   text-transform: uppercase;
+
+//   background: $accent;
+//   border-radius: $br;
+//   cursor: pointer;
+
+//   transform: translateX(-100%);
+// }
