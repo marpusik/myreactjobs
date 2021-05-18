@@ -9,24 +9,27 @@ function Form() {
   return (
 
     <form className={s.form}>
-          <div className="mainRadioBtns">
+      <div className={s.radioBtns}>
 
-            <input id="radio1" type="radio" name="search" value="Поиск по номеру" />
-            <label for="radio1">Поиск по номеру</label>
+        <input id="radio1" type="radio" name="search" value="Поиск по номеру" />
+        <label for="radio1">Поиск по номеру</label>
 
-            <input id="radio2" type="radio" name="search" value="Поиск по марке" checked />
-            <label for="radio2">Поиск по марке</label>
+        <input id="radio2" type="radio" name="search" value="Поиск по марке" checked />
+        <label for="radio2">Поиск по марке</label>
 
 
-            <input id="radio3" type="radio" name="search" value="Поиск по названию товара" />
-            <label for="radio3">Поиск по названию товара</label>
+        <input id="radio3" type="radio" name="search" value="Поиск по названию товара" />
+        <label for="radio3">Поиск по названию товара</label>
 
-          </div>
+      </div>
 
-          <input className="mainInput" type="text" placeholder="Введите марку" />
-          <button className="mainSearchBtn">ИСКАТЬ</button>
+      <div className={s.wrapInput}>
 
-        </form>
+        <input className={s.input} type="text" placeholder="Введите марку" />
+        <button className={s.searchBtn}>ИСКАТЬ</button>
+      </div>
+
+    </form>
   );
 }
 
