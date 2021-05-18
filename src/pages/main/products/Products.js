@@ -32,7 +32,7 @@ function Products(props) {
       <div className={s.slider}>
 
 
-        <Swiper navigation={true} slidesPerView={4} spaceBetween={30} className="mySwiper">
+        <Swiper navigation={true} slidesPerView={4} className={s.mySwiper}>
           <SwiperSlide>
             <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800 &#8381;" />
           </SwiperSlide>
@@ -50,6 +50,22 @@ function Products(props) {
             <Card img={equipment} title="Спасательное снаряжение" />
           </SwiperSlide>
 
+          <SwiperSlide>
+          <Card img={audio} title="BRP Audio-портативная система" />
+          </SwiperSlide>
+
+          <SwiperSlide>
+          <Card img={echomap} title="Garmin Echomap Plus 62cv" price="45 800 &#8381;" />
+          </SwiperSlide>
+
+
+          <SwiperSlide>
+          <Card img={key} title="RF D.E.S.S.TM Key" />
+          </SwiperSlide>
+
+          <SwiperSlide>
+          <Card img={suit} title="Мужской костюм 3мм" price="7000 &#8381;" />
+          </SwiperSlide>
         </Swiper>
 
         <div className={s.none}>

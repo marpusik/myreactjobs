@@ -1,5 +1,24 @@
-.menu {
+@import './../../../../sass/abstracts/vars.scss';
 
-  text-transform: capitalize;
- 
+
+.menu {
+margin: 25px 0 35px;
+
+}
+
+
+.link {
+  margin-right: 50px;
+  padding-bottom: 10px;
+
+  font-family: SF Pro Display;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $primary;
+
+  &:hover {
+    border-bottom: 2px solid #1C62CD;
+  }
+
 }

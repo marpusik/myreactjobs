@@ -1,6 +1,44 @@
-
+@import './../../../sass/abstracts/vars.scss';
 
 .banner {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 120px 20px 70px;
+  margin-bottom: 75px;
+
+  background: $accent;
+}
+
+.utv {
+  transform: rotateY(180deg);
+}
+
+.title {
+  max-width: 305px;
+
+  font-family: SF Pro Display;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
+  color: #FFFFFF;
+
+}
+
+.btn {
+  width: 285px;
+  height: 55px;
+
+  font-family: SF Pro Display;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 2;
+  color: $primary;
+  text-transform: uppercase;
+
+  background-color: #FFFFFF;
+
+  cursor: pointer;
 
 }

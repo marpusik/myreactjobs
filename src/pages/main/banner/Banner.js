@@ -11,12 +11,12 @@ function Banner() {
   return (
 
     <div className={s.banner}>
-      <div className="bannerImgs">
-        <img className="bannerAtv" src={atv} alt="" />
-        <img className="bannerUtv" src={utv} alt="" />
+      <div className={s.wrapImgs}>
+        <img className={s.atv} src={atv} alt="atv" />
+        <img className={s.utv} src={utv} alt="utv" />
       </div>
-      <h3 className="bannerTitle">CКИДКИ на все запчасти до 70%</h3>
-      <button className="bannerBtn">Посмотреть все</button>
+      <h3 className={s.title}>CКИДКИ на все запчасти до 70%</h3>
+      <button className={s.btn}>Посмотреть все</button>
     </div>
   );
 }

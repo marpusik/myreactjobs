@@ -14,18 +14,19 @@
   top: 20%;
   left: 50%;
 
-  z-index: 1;
-
-  font-size: 45px;
-
   width: 30%;
 
+
+  z-index: 1;
+  font-size: 45px;
+  color: #000000;
 }
 
 
 .swiper-container {
   width: 100%;
   height: 100%;
+
 }
 
 .swiper-slide {
@@ -53,4 +54,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mySwiper {
+
+  --swiper-theme-color: #ffffff;
 }
