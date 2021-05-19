@@ -1,6 +1,16 @@
+.rating {
+    margin-top: 25px;
+    & button {
+        padding-right: 25px;
+    }
+    & label {
+        margin: 0;
+    }
+}
 
-
-
+.link {
+    margin-top: 50px;
+}
 
 
 
