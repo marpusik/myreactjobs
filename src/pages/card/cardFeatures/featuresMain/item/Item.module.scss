@@ -1,0 +1,13 @@
+.item {
+    border-bottom: 1px solid #2f303510;
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 100px;
+    
+    
+}
+.item:first-child {
+    padding-left: 0;
+    
+}

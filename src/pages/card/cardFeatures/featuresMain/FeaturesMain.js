@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './FeaturesMain.module.scss';
+import Item from './item/Item';
 
 
 
@@ -10,11 +11,11 @@ function FeaturesMain() {
     <>
    <table className={s.features}> 
    
-   <tr><td className={s.item}>Производитель</td><td className={s.item}>Канада</td></tr> 
-   <tr><td className={s.item}> Количество мест, шт: </td><td className={s.item}>3</td></tr> 
-   <tr><td className={s.item}>Мощность, л.с.</td><td className={s.item}>155</td></tr> 
-   <tr><td className={s.item}>Тип двигателя</td><td className={s.item}>Бензиновый</td></tr> 
-   <tr><td className={s.item}>Год выпуска</td><td className={s.item}>2018</td></tr> 
+   <tr><Item text="Производитель"/><Item text="Канада"/></tr> 
+   <tr><Item text="Количество мест, шт: "/><Item text="3"/></tr> 
+   <tr><Item text="Мощность, л.с."/><Item text="155"/></tr> 
+   <tr><Item text="Тип двигателя"/><Item text="Бензиновый"/></tr> 
+   <tr><Item text="Год выпуска"/><Item text="	2018"/></tr> 
    </table>
     </>
   );
