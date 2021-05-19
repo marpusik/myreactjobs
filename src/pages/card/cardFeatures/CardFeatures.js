@@ -1,13 +1,13 @@
 import React from 'react';
-import ProductCode from '../../../../components/productCode/ProductCode';
-import Title from '../../../../components/title/Title';
+import ProductCode from '../../../components/productCode/ProductCode';
+import Title from '../../../components/title/Title';
 import s from './CardFeatures.module.scss';
 
 
 import './CardFeatures.module.scss';
-import Heart from '../../../../components/heart/Heart';
-import BarChart from '../../../../components/barChart/BarChart';
-import RatingPage from '../../../../components/rating/Rating';
+import Heart from '../../../components/heart/Heart';
+import BarChart from '../../../components/barChart/BarChart';
+import RatingPage from '../../../components/rating/Rating';
 import FeaturesMain from './featuresMain/FeaturesMain';
 
 
