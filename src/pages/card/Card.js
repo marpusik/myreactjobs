@@ -4,6 +4,7 @@ import Adress from './adress/Adress';
 
 
 import s from './Card.module.scss';
+import CardFeatures from './cardFeatures/CardFeatures';
 import CardMenu from './cardMenu/CardMenu';
 
 
@@ -15,7 +16,7 @@ function Card() {
 
     <div className={s.card}>
 
-
+      <CardFeatures/>
       <CardMenu />
       <Adress />
 
