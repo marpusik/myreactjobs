@@ -15,6 +15,8 @@ import ShowMore from './showMore/showMore';
 
 
 function CardFeatures() {
+
+  const active = true;
   return (
     <>
     <Title
@@ -29,7 +31,7 @@ function CardFeatures() {
       <RatingPage/>
     </div>
     <div className={s.link}>
-      <LinkBtn text="Характеристики"
+      <LinkBtn active={active} text="Характеристики"
       />
       <LinkBtn text="Наличие в магазине"
       />
