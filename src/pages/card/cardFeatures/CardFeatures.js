@@ -3,12 +3,14 @@ import ProductCode from '../../../components/productCode/ProductCode';
 import Title from '../../../components/title/Title';
 import s from './CardFeatures.module.scss';
 
-
+import Btn from '../btn/Btn';
 import './CardFeatures.module.scss';
 import Heart from '../../../components/heart/Heart';
 import BarChart from '../../../components/barChart/BarChart';
 import RatingPage from '../../../components/rating/Rating';
 import FeaturesMain from './featuresMain/FeaturesMain';
+import LinkBtn from './linkBtn/linkBtn';
+import ShowMore from './showMore/showMore';
 
 
 
@@ -26,7 +28,15 @@ function CardFeatures() {
       <BarChart/>
       <RatingPage/>
     </div>
+    <div className={s.link}>
+      <LinkBtn text="Характеристики"
+      />
+      <LinkBtn text="Наличие в магазине"
+      />
+    </div>
     <FeaturesMain/>
+    <ShowMore/>
+    <Btn/>
     </>
   );
 }

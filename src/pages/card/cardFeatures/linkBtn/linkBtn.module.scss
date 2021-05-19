@@ -1,0 +1,15 @@
+.link {
+    background: inherit;
+    border: none;
+    margin-right: 35px;
+    font-size: 20px;
+    color: #2F3035;
+    opacity: 0.6;
+    cursor: pointer;
+    &:focus {
+        opacity: 1;
+        border-bottom: 2px solid #1C62CD;
+        font-weight: bold;
+    }
+}
+
