@@ -3,7 +3,7 @@ import Basket from '../basket/Basket';
 import Heart from '../heart/Heart';
 import Price from '../price/Price';
 import Sale from '../sale/Sale';
-
+import { Link } from 'react-router-dom';
 import s from  './Card.module.scss';
 
 
@@ -22,7 +22,7 @@ function Card({ img, title, price }) {
         <Basket />
       </button>
       {/* <button className={s.report}>Сообщить о поступлении</button> */}
-      <div className={s.look}>посмотреть товар</div>
+      <div className={s.look}><Link to="/card" >посмотреть товар</Link></div>
 
     </div>
   );

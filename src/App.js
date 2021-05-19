@@ -1,3 +1,8 @@
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
 import Header from './pages/header/Header';
 import Main from './pages/main/Main';
 import Footer from "./pages/footer/Footer";
@@ -14,12 +19,26 @@ function App() {
   return (
     <div className={s.App}>
       <div className={s.container}>
-
-        <Header />
-        <Main />
-        <Catalog />
-        <Card/>
-        <Footer />
+      <Router>
+        <Switch>
+          <Route exact path='/'>
+                    <Header/>
+                    <Main />
+                    <Footer/>
+          </Route>
+          <Route exact path='/card'>
+                  <Header/>
+                  <Card />
+                  <Footer/>
+          </Route>
+          <Route exact path='/catalog'>
+                  <Header/>
+                  <Catalog />
+                  <Footer/>
+          </Route>
+        </Switch>
+      </Router>
+        
 
       </div>
     </div>
