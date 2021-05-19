@@ -1,13 +1,17 @@
-import React from "react";
+import s from './Сontract.module.scss'
 
 function Contract() {
     return (
-        <><ul className="contract__list">
+        <div className="contract">
+            <ul className={s.contract__list}>
                 <li className="contract__item"><a className="contract__link"
-                                              href="ya.ru">Договор оферты</a></li>
+                                                  href="">Договор оферты</a></li>
                 <li className="contract__item"><a className="contract__link"
-                                              href="ya.ru">Политика обработки персональных данных</a></li>
-            </ul></>
+                                                  href="">Политика обработки персональных данных</a></li>
+                <li className="contract__item"><a className="contract__link"
+                                                  href="">Политика обработки персональных данных</a></li>
+            </ul>
+        </div>
     );
 }
 

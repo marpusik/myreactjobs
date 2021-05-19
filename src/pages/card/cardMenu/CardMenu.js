@@ -1,33 +1,33 @@
 import React from 'react';
 import CardLink from './cardLink/CardLink';
 
-import './CardMenu.css';
+import s from './CardMenu.module.scss';
 
 
 function CardMenu() {
   return (
-    <nav className="cardMenu">
-      <ul className="cardList">
+    <nav className={s.cardMenu}>
+      <ul className={s.cardList}>
 
-        <li className="cardItem">
+        <li className={s.cardItem}>
           <CardLink text="О товаре"/>
         </li>
-        <li className="cardItem">
+        <li className={s.cardItem}>
           <CardLink text="Характеристики"/>
         </li>
-        <li className="cardItem">
+        <li className={s.cardItem}>
           <CardLink text="Отзывы"/>
         </li>
-        <li className="cardItem">
+        <li className={s.cardItem}>
           <CardLink text="Самовывоз"/>
         </li>
-        <li className="cardItem">
+        <li className={s.cardItem}>
           <CardLink text="Доставка"/>
         </li>
-        <li className="cardItem">
+        <li className={s.cardItem}>
           <CardLink text="Сервис"/>
         </li>
-        <li className="cardItem">
+        <li className={s.cardItem}>
           <CardLink text="Гарантия"/>
         </li>
 

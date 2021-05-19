@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './CardLink.css';
+import  s from './CardLink.module.scss';
 
 
 
 function CardLink(props) {
   return (
-    <a className="cardLink" href="tut.by">
+    <a className={s.cardLink} href="tut.by">
 {props.text}
     </a>
 

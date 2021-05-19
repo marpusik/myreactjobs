@@ -1,6 +1,6 @@
 import React from 'react';
 
-import s from './Sale.module.css';
+import s from './Sale.module.scss';
 
 
 

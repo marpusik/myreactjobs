@@ -2,6 +2,8 @@ import Header from './pages/header/Header';
 import Main from './pages/main/Main';
 import Footer from "./pages/footer/Footer";
 import Catalog from './pages/catalog/catalog';
+import Card from './pages/card/Card';
+
 
 import s from './App.module.scss';
 
@@ -16,6 +18,7 @@ function App() {
         <Header />
         <Main />
         <Catalog />
+        <Card/>
         <Footer />
 
       </div>
