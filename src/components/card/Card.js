@@ -32,3 +32,30 @@ export default Card;
 
 
 
+
+// function Card(props) {
+//   return (
+
+//     <div className={s.card}>
+//       <Sale/>
+//       <Heart />
+//       <img className={s.img} src={props.img} alt="img" />
+//       <h3 className={s.title}>{props.title}</h3>
+//       <Price price={props.price} />
+//       {/* <span className={s.priceNone}>нет в наличии</span> */}
+//       <button className={s.btn}>
+//         <Basket />
+//       </button>
+//       {/* <button className={s.report}>Сообщить о поступлении</button> */}
+//       <div className={s.look}>посмотреть товар</div>
+
+//     </div>
+//   );
+// }
+
+// export default Card;
+
+
+
+
+

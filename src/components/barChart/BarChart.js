@@ -9,9 +9,7 @@ function BarChart() {
   return (
 
     <button className={s.barChart}>
-      <BarChartIcon
-      fontSize="medium"
-      />
+      <BarChartIcon fontSize="medium" />
     </button>
 
   );
