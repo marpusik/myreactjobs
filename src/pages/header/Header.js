@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import s from "./Header.module.scss";
 import HeaderLink from "./headerLink/HeaderLink";
 import logo from "./../../assets/icons/LogoIcon.svg";
@@ -34,8 +35,8 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <a className={s.logo} href="##"><img className="logoImg" src={logo} alt="" /></a>
       
+      <Link to="/" className={s.logo} ><img className="logoImg" src={logo} alt="" /></Link>
       
       <nav className={s.social}>
       <address className={s.adress}>

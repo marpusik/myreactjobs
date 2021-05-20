@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 import s from './Card.module.scss';
 
@@ -11,7 +11,7 @@ function Card({ title, img }) {
 
       <div className={s.wrapContent}>
         <h3 className={s.caption}>{title}</h3>
-        <a className={s.more} href="tut.by" >Подробнее 	&gt; </a>
+        <Link to="/catalog" className={s.more} >Подробнее 	&gt;</Link>
       </div>
       <img className={s.img} src={img} alt="card" />
 
