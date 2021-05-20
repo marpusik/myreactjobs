@@ -2,12 +2,16 @@
 
 .form {
   display: flex;
-  justify-content: space-between;
+
   margin: 0 0 40px 40px;
 
 }
 
-label {
+.shop {
+  width: 50%;
+}
+
+.label {
   margin-right: 20px;
 
   font-family: SF Pro Display;

@@ -13,20 +13,15 @@ function Form() {
 
     <form className={s.form}>
 
-
       <div className={s.shop}>
 
         <label className={s.label} for="input">Магазин</label>
         <input className={s.input} id="input" type="text" placeholder="&#921;" />
 
-
-        {/* <label className={s.label} > Магазин
-      <input className={s.input} type="text" autoFocus />
-        </label> */}
       </div>
 
         <FormControl component="fieldset"  >
-          <RadioGroup defaultValue="Забрать в течение недели" aria-label="gender" name="customized-radios"
+          <RadioGroup defaultValue="Забрать в течение недели"  name="customized-radios"
           style={{flexDirection: "row"}}>
             <FormControlLabel value="Забрать сегодня" control={<StyledRadio />} label="Забрать сегодня" />
             <FormControlLabel value="Забрать в течение недели" control={<StyledRadio />} label="Забрать в течение недели" />

@@ -3,9 +3,9 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import Header from './pages/header/Header';
+import Header from './layouts/header/Header';
 import Main from './pages/main/Main';
-import Footer from "./pages/footer/Footer";
+import Footer from "./layouts/footer/Footer";
 import Catalog from './pages/catalog/catalog';
 import Card from './pages/card/Card';
 
@@ -38,7 +38,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-        
+
 
       </div>
     </div>
