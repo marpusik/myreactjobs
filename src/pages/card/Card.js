@@ -8,6 +8,7 @@ import CardMenu from './cardMenu/CardMenu';
 
 
 import s from './Card.module.scss';
+import Products from '../main/products/Products';
 
 
 
@@ -21,6 +22,7 @@ function Card() {
       <CardFeatures />
       <CardMenu />
       <Adress />
+      <Products text="С этим товаром покупают" />
 
     </div>
 

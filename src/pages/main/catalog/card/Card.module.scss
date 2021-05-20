@@ -14,10 +14,13 @@
   box-sizing: border-box;
   border-radius: $br;
 
+  transition: all  .2s linear;
+
   &:hover {
     color: $accent;
 
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+
   }
 }
 
@@ -41,5 +44,7 @@
   font-family: SF Pro Display;
   font-size: 14px;
   color: $lightText;
+
+  cursor: pointer;
 
 }

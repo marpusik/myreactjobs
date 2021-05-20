@@ -16,7 +16,7 @@ function Form() {
       <div className={s.shop}>
 
         <label className={s.label} for="input">Магазин</label>
-        <input className={s.input} id="input" type="text" placeholder="&#921;" />
+        <input className={s.input} id="input" type="text" />
 
       </div>
 

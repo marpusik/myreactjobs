@@ -15,6 +15,8 @@ import "swiper/components/pagination/pagination.min.css"
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 function PromoSlider() {
+
+  
   return (
 
     <div className={s.promoSlider}>
