@@ -4,3 +4,26 @@
     align-items: $align-items;
     justify-content: $justifyContent;
 }
+
+//   @include font(21px, 1.2, false,center)
+//   @mixin font (value,value1,value2,value4:left){
+//     font-size: $value;
+//     line-height: $value2;
+//     font-weight: $value3;
+//     text-align: $value4;
+//   }
+
+//   @mixin asdf ($value1,$value2,$value3) {
+
+//     @font-face {
+//       font-family: $value1;
+//       font-display: swap;
+//       src:  
+//       url('../assets/fonts/Barlow/#{value2}.woff') format('woff'),
+//       url('../assets/fonts/Barlow/#{value2}.woff2') format('woff2');
+//       font-weight: $value3;
+//     }
+
+//   }
+
+//   @include asdf(barlow,barlow-bold,700)
