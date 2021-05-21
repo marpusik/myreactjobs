@@ -8,8 +8,6 @@ function Contract() {
                                                   href="">Договор оферты</a></li>
                 <li className="contract__item"><a className="contract__link"
                                                   href="">Политика обработки персональных данных</a></li>
-                <li className="contract__item"><a className="contract__link"
-                                                  href="">Политика обработки персональных данных</a></li>
             </ul>
         </div>
     );
