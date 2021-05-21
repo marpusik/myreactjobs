@@ -14,6 +14,12 @@
   border: 1px solid #CDCDCD;
   border-radius: $br;
   text-align: center;
+
+  transition: all .2s linear;
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  }
 }
 
 .wrapPrice {

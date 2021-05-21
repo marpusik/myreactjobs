@@ -24,6 +24,16 @@
     opacity: .9;
 
   }
+
+  &:hover .title {
+    color: $accent;
+  }
+
+  // &:hover  .price {
+  //   color: $accent;
+  // }
+
+
 }
 
 .title {

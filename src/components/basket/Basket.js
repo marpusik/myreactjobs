@@ -1,7 +1,6 @@
 import React from 'react';
 
 import basket from './../../assets/icons/BasketIcon.svg';
-
 import s from './Basket.module.scss';
 
 

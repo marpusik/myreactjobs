@@ -19,12 +19,20 @@
   border-radius: $br;
   border: none;
 
+  // transition: all 1s linear;
+
   &::placeholder {
 
     font-family: SF Pro Display;
     font-size: 16px;
     color: #656464;
   }
+
+  &:focus::placeholder {
+    font-size: 0;
+    // transform: translateX(-90%);
+  }
+
 }
 
 .searchBtn {

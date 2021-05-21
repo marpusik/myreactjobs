@@ -31,39 +31,38 @@ function Products(props) {
 
       <div className={s.slider}>
 
-
         <Swiper navigation={true} slidesPerView={4} className={s.mySwiper}>
-          <SwiperSlide>
+          <SwiperSlide className={s.slid}>
             <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800 &#8381;" />
           </SwiperSlide>
 
-          <SwiperSlide>
+          <SwiperSlide className={s.slid}>
             <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900 &#8381;" />
           </SwiperSlide>
 
 
-          <SwiperSlide>
+          <SwiperSlide className={s.slid}>
             <Card img={brp} title="BRP Audio-Premium System" price="68 000 &#8381;" />
           </SwiperSlide>
 
-          <SwiperSlide>
+          <SwiperSlide className={s.slid} >
             <Card img={equipment} title="Спасательное снаряжение" />
           </SwiperSlide>
 
-          <SwiperSlide>
+          <SwiperSlide className={s.slid}>
           <Card img={audio} title="BRP Audio-портативная система" />
           </SwiperSlide>
 
-          <SwiperSlide>
+          <SwiperSlide className={s.slid}>
           <Card img={echomap} title="Garmin Echomap Plus 62cv" price="45 800 &#8381;" />
           </SwiperSlide>
 
 
-          <SwiperSlide>
+          <SwiperSlide className={s.slid}>
           <Card img={key} title="RF D.E.S.S.TM Key" />
           </SwiperSlide>
 
-          <SwiperSlide>
+          <SwiperSlide className={s.slid}>
           <Card img={suit} title="Мужской костюм 3мм" price="7000 &#8381;" />
           </SwiperSlide>
         </Swiper>

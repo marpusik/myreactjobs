@@ -1,19 +1,12 @@
 @import './../../../sass/abstracts/vars.scss';
 
 .products {
-  width: 100%;
+text-align: center;
  }
 
 
 
-.slider {
-  // display: grid;
-  // gap: 40px;
-  // grid-template-columns: repeat(auto-fill, 270px);
 
-  margin-bottom: 30px;
-
-}
 
 .none {
   display: none;
@@ -24,5 +17,46 @@
   --swiper-theme-color: $primary;
 }
 
+.slid {
+  width: 270px;
+}
 
+.slider {
+  // display: grid;
+  // gap: 40px;
+  // grid-template-columns: repeat(auto-fill, 270px);
+
+
+
+  // :global(.swiper-container-horizontal>.swiper-pagination-bullets) {
+  //   bottom: 40px;
+  // }
+
+  // :global(.swiper-container) {
+  //   overflow: visible;
+  // }
+
+  :global(.swiper-wrapper) {
+text-align: center;
+  }
+
+  :global(.swiper-button-next) {
+    right: -5px;
+  }
+
+  :global(.swiper-button-prev) {
+    left: -5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
 
