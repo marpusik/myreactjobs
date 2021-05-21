@@ -8,35 +8,36 @@ import Main from './pages/main/Main';
 import Footer from "./layouts/footer/Footer";
 import Catalog from './pages/catalog/catalog';
 import Card from './pages/card/Card';
-
-
-import s from './App.module.scss';
+import "./sass/fonts.scss";
+import  './App.scss';
 
 
 function App() {
 
 
   return (
-    <div className={s.App}>
-      <div className={s.container}>
+    <div className="App">
+      <div className="container">
       <Router>
+      <Header/>
         <Switch>
           <Route exact path='/'>
-                    <Header/>
+                   
                     <Main />
-                    <Footer/>
+                    
           </Route>
           <Route exact path='/card'>
-                  <Header/>
+                  
                   <Card />
-                  <Footer/>
+                
           </Route>
           <Route exact path='/catalog'>
-                  <Header/>
+                
                   <Catalog />
-                  <Footer/>
+                  
           </Route>
         </Switch>
+        <Footer/>
       </Router>
 
 
