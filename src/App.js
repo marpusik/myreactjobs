@@ -1,6 +1,6 @@
 import Header from './pages/header/Header';
 import Main from './pages/main/Main';
-import Footer from "./pages/footer/Footer";
+import Footer from "./components/footer/Footer";
 import Catalog from './pages/catalog/catalog';
 
 import s from './App.module.scss';
