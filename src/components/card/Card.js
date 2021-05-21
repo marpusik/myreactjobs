@@ -26,7 +26,7 @@ function Card({ img, title, price }) {
         {/* <button className={s.report}>Сообщить о поступлении</button> */}
         <div className={s.look}>посмотреть товар</div>
       </div >
-      
+
     </Link>
 
   );
