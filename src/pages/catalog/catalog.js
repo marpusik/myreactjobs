@@ -70,7 +70,7 @@ function Catalog() {
         </div>
      </section>
      <footer className={s.pagination}>
-     <Pagination count={10}  shape="rounded" hidePrevButton hideNextButton color="primary"/>
+     <Pagination count={10}  shape="rounded" variant="outlined" hidePrevButton hideNextButton color="primary"/>
 
      </footer>
      </article>
