@@ -1,14 +1,17 @@
 import React from 'react';
-import Basket from '../basket/Basket';
 import Heart from '../heart/Heart';
-import Price from '../price/Price';
 import Sale from '../sale/Sale';
+
 import { Link } from 'react-router-dom';
+
 import s from './Card.module.scss';
 
+import { ReactComponent as Basket } from './../../assets/icons/BasketIcon.svg';
 
 
-function Card({ img, title, price }) {
+
+function Card({img, title, price, style}) {
+
   return (
 
     <Link to="/card" >
@@ -18,12 +21,15 @@ function Card({ img, title, price }) {
         <Heart />
         <img className={s.img} src={img} alt="img" />
         <h3 className={s.title}>{title}</h3>
-        <Price price={price} />
-        {/* <span className={s.priceNone}>нет в наличии</span> */}
-        <button className={s.btn}>
+
+        {price
+        ? <span className={s.price} style={style}>{price} &#8381;  </span>
+        : <span className={s.priceNone}>нет в наличии</span>}
+        {price
+        ?<button className={s.btn}>
           <Basket />
         </button>
-        {/* <button className={s.report}>Сообщить о поступлении</button> */}
+        :<button className={s.report}>Сообщить о поступлении</button>}
         <div className={s.look}>посмотреть товар</div>
       </div >
 

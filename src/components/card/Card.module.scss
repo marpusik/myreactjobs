@@ -29,9 +29,19 @@
     color: $accent;
   }
 
-  // &:hover  .price {
-  //   color: $accent;
-  // }
+  &:hover .price {
+    color: $accent;
+  }
+
+  &:hover .priceNone {
+    color: $accent;
+  }
+
+  &:hover .report {
+    color: $accent;
+  }
+
+
 
 
 }
@@ -41,6 +51,16 @@
   font-size: 18px;
   text-align: center;
   color: $primary;
+}
+
+
+.price {
+  font-family: Barlow;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: $primary;
+
 }
 
 .priceNone {
@@ -69,7 +89,7 @@
   height: 61px;
 
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -96,7 +116,6 @@
 
   width: 60px;
   height: 40px;
-
 
   background: $accent;
   border-radius: 10px 0px 0px 0px;
