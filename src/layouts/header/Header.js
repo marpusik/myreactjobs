@@ -57,7 +57,7 @@ function Header() {
           <img src={personal} alt=""  />
           </li>
           <li className={s.socialItem}>
-            <Basket fill="#2F3035"/>
+            <Basket fill="#2F3035" style={{cursor: "pointer"}} />
           </li>
         </ul>
       </nav>

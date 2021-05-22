@@ -1,7 +1,7 @@
 @import './../../../sass/abstracts/vars.scss';
 
 .products {
-text-align: center;
+text-align: left;
  }
 
 .none {
@@ -9,9 +9,22 @@ text-align: center;
 }
 
 .slider {
-  height: 400px;
-  width:1200;
+
+  min-width: 1200px;
+
+  :global(.slick-prev) {
+    width: 20px;
+    height: 30px;
+    top: 50%;
+    left: -40px;
+  }
+
+  :global(.slick-next) {
+    width: 20px;
+    height: 30px;
+    top: 50%;
+    right: -8px;
+  }
+
 }
-
-
 
