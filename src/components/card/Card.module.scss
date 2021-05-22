@@ -47,7 +47,8 @@
 }
 
 .title {
-  font-family: SF Pro Display;
+  font-family: SFProDisplay;
+  font-weight: 400;
   font-size: 18px;
   text-align: center;
   color: $primary;
@@ -64,7 +65,7 @@
 }
 
 .priceNone {
-  font-family: SF Pro Display;
+  font-family: SFProDisplay;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
@@ -73,7 +74,7 @@
 }
 
 .report {
-  font-family: SF Pro Display;
+  font-family: SFProDisplay;
   font-size: 16px;
   color: $accent;
   text-decoration: underline;
@@ -88,6 +89,7 @@
   width: 230px;
   height: 61px;
 
+<<<<<<< HEAD
   position: absolute;
   top: 40%;
   left: 50%;
@@ -95,6 +97,9 @@
   transform: translate(-50%, -50%);
 
   font-family: SF Pro Display;
+=======
+  font-family: SFProDisplay;
+>>>>>>> origin/main
   font-size: 20px;
   text-align: center;
   color: $primary;

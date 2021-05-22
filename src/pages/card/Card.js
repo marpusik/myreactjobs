@@ -3,10 +3,6 @@ import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
 import Adress from './adress/Adress';
 import CardFeatures from './cardFeatures/CardFeatures';
 import CardMenu from './cardMenu/CardMenu';
-
-
-
-
 import s from './Card.module.scss';
 import Products from '../main/products/Products';
 

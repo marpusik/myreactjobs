@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+  height: 579px;
+}
+.img{
+  background-image: url(../../../assets/images/shopItems/pwc/brp-seadoo-gti-155hp-se-long-blue-metallic.png);
+  width: 500px;
+  height: 375px;
+}
+.img2{
+  background-image: url(../../../assets/images/shopItems/engine/line.svg);
+  background-repeat: no-repeat;
+  width: 145px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title{
+  color: #1C62CD;
+  font-family: SFProDisplay, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

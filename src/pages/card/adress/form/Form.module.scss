@@ -13,7 +13,7 @@
 .label {
   margin-right: 20px;
 
-  font-family: SF Pro Display;
+  font-family: SFProDisplay;
   font-size: 17px;
   color: $primary-opacity;
 }
@@ -34,3 +34,72 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+
+
+// .radioBtns {
+
+
+//   & input[type=radio] {
+//     display: none;
+//   }
+
+
+//   & label {
+//     display: inline-block;
+
+//     padding: 10px 25px;
+//     margin-bottom: 25px;
+
+//     border-radius: 5px;
+//     font-family: SFProDisplay;
+//     font-size: 20px;
+//     cursor: pointer;
+
+//   }
+
+//   & input[type=radio]:checked+label {
+//     background-color: #F0F0F4;
+//     font-weight: bold;
+//   }
+
+// }
+
+// .wrapInput {
+//   position: relative;
+// }
+
+// .input {
+//   width: 100%;
+
+//   padding: 15px 20px;
+
+//   background: $bg;
+//   border-radius: $br;
+//   border: none;
+
+//   &::placeholder {
+
+//     font-family: SFProDisplay;
+//     font-size: 16px;
+//     color: #656464;
+//   }
+// }
+
+// .searchBtn {
+//   position: absolute;
+
+//   height: 100%;
+//   width: 145px;
+
+//   color: #ffffff;
+//   text-transform: uppercase;
+
+//   background: $accent;
+//   border-radius: $br;
+//   cursor: pointer;
+
+//   transform: translateX(-100%);
+// }
+>>>>>>> origin/main
