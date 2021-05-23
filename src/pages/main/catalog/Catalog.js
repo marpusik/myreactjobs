@@ -18,7 +18,7 @@ function Catalog() {
   return (
 
     <div className={s.catalog}>
-    <Card title="Квадроциклы" img={atv} />
+    <Card title="Квадроциклы" img={atv} link={"/хз куда"}/>
     <Card title="Гидроциклы" img={pwc} />
     <Card title="Катера" img={boat} />
     <Card title="Снегоходы" img={snow} />

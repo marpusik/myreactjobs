@@ -1,28 +1,30 @@
 @import './../../../sass/abstracts/vars.scss';
 
 .products {
-  width: 100%;
+text-align: left;
  }
-
-
-
-.slider {
-  // display: grid;
-  // gap: 40px;
-  // grid-template-columns: repeat(auto-fill, 270px);
-
-  margin-bottom: 30px;
-
-}
 
 .none {
   display: none;
 }
 
-.mySwiper {
-  --swiper-navigation-size: 30px;
-  --swiper-theme-color: $primary;
+.slider {
+
+  min-width: 1200px;
+
+  :global(.slick-prev) {
+    width: 20px;
+    height: 30px;
+    top: 50%;
+    left: -40px;
+  }
+
+  :global(.slick-next) {
+    width: 20px;
+    height: 30px;
+    top: 50%;
+    right: -8px;
+  }
+
 }
-
-
 

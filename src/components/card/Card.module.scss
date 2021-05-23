@@ -14,18 +14,36 @@
   border: 1px solid #CDCDCD;
   border-radius: $br;
 
+  transition: all .2s linear;
+
   &:hover {
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
   }
 
   &:hover .look {
-    display: block;
+    opacity: .9;
 
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
   }
+
+  &:hover .title {
+    color: $accent;
+  }
+
+  &:hover .price {
+    color: $accent;
+  }
+
+  &:hover .priceNone {
+    color: $accent;
+  }
+
+  &:hover .report {
+    color: $accent;
+  }
+
+
+
+
 }
 
 .title {
@@ -34,6 +52,16 @@
   font-size: 18px;
   text-align: center;
   color: $primary;
+}
+
+
+.price {
+  font-family: Barlow;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: $primary;
+
 }
 
 .priceNone {
@@ -56,25 +84,29 @@
 }
 
 .look {
-  display: none;
-
-  position: absolute;
-
   padding: 20px;
-
 
   width: 230px;
   height: 61px;
 
-  font-family: SFProDisplay;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-family: SF Pro Display;
   font-size: 20px;
   text-align: center;
   color: $primary;
 
   background: #FFFFFF;
-  opacity: 0.9;
+  opacity: 0;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: $br;
+
+  cursor: pointer;
+  transition: all .5s linear;
 }
 
 .btn {
@@ -86,8 +118,8 @@
   width: 60px;
   height: 40px;
 
-
   background: $accent;
   border-radius: 10px 0px 0px 0px;
   border: none;
+  cursor: pointer;
 }

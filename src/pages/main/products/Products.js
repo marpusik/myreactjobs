@@ -3,81 +3,48 @@ import Card from '../../../components/card/Card'
 import Title from './title/Title';
 import Menu from './menu/Menu';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from 'swiper/core';
 
-import bag from '../../../assets/images/shopItems/spare-parts/bag.png';
-import airflow from '../../../assets/images/shopItems/spare-parts/airflow.png';
-import brp from '../../../assets/images/shopItems/spare-parts/brp.png';
-import equipment from '../../../assets/images/shopItems/spare-parts/equipment.png';
-import audio from '../../../assets/images/shopItems/spare-parts/audio.png';
-import echomap from '../../../assets/images/shopItems/spare-parts/echomap.png';
-import key from '../../../assets/images/shopItems/spare-parts/key.png';
-import suit from '../../../assets/images/shopItems/spare-parts/suit.png';
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import {ReactComponent as SampleNextArrow} from "../../../assets/icons/Vector.svg"
+import {ReactComponent as SamplePrevArrow} from "../../../assets/icons/prev.svg"
 
 import s from './Products.module.scss';
 
 
-SwiperCore.use([Navigation]);
 
 function Products(props) {
 
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow/>
+  };
+
+  
   return (
+
+
     <div className={s.products}>
       <Title text={props.text} />
       <Menu />
 
-
-      <div className={s.slider}>
-
-
-        <Swiper navigation={true} slidesPerView={4} className={s.mySwiper}>
-          <SwiperSlide>
-            <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800 &#8381;" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900 &#8381;" />
-          </SwiperSlide>
-
-
-          <SwiperSlide>
-            <Card img={brp} title="BRP Audio-Premium System" price="68 000 &#8381;" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Card img={equipment} title="Спасательное снаряжение" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-          <Card img={audio} title="BRP Audio-портативная система" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-          <Card img={echomap} title="Garmin Echomap Plus 62cv" price="45 800 &#8381;" />
-          </SwiperSlide>
-
-
-          <SwiperSlide>
-          <Card img={key} title="RF D.E.S.S.TM Key" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-          <Card img={suit} title="Мужской костюм 3мм" price="7000 &#8381;" />
-          </SwiperSlide>
-        </Swiper>
-
-        <div className={s.none}>
-          <Card img={audio} title="BRP Audio-портативная система" />
-          <Card img={echomap} title="Garmin Echomap Plus 62cv" price="45 800 &#8381;" />
-          <Card img={key} title="RF D.E.S.S.TM Key" />
-          <Card img={suit} title="Мужской костюм 3мм" price="7000 &#8381;" />
-
-        </div>
-
-      </div>
-
+      <Slider {...settings} className={s.slider}>
+        <Card img={props.data1.img} title={props.data1.title} price={props.data1.price} link={props.data1.link} />
+        <Card img={props.data2.img} title={props.data2.title} price={props.data2.price} link={props.data2.link}/>
+        <Card img={props.data3.img} title={props.data3.title} price={props.data3.price} link={props.data3.link}/>
+        <Card img={props.data4.img} title={props.data4.title} price={props.data4.price} link={props.data4.link}/>
+        <Card img={props.data5.img} title={props.data5.title} price={props.data5.price} link={props.data5.link}/>
+        <Card img={props.data6.img} title={props.data6.title} price={props.data6.price} link={props.data6.link}/>
+        <Card img={props.data7.img} title={props.data7.title} price={props.data7.price} link={props.data7.link}/>
+        <Card img={props.data8.img} title={props.data8.title} price={props.data8.price} link={props.data8.link}/>
+      </Slider>
 
 
     </div>

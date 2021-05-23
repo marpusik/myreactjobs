@@ -2,14 +2,13 @@
 
 
 .price {
-font-family: Barlow;
-font-weight: bold;
-font-size: 30px;
-text-align: center;
-color: $primary;
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: $primary;
+
+    // &:hover {
+    //     color: $accent;
+    // }
 }
-
-
-
-
-
