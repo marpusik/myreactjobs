@@ -7,7 +7,8 @@ import s from './Card.module.scss';
 function Card({ title, img, link }) {
   return (
 
-    <Link to={`/card${link}`}>
+
+    <Link to={`/catalog`}>
 
     <div className={s.card}>
 

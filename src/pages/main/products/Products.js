@@ -27,6 +27,7 @@ function Products(props) {
     prevArrow: <SamplePrevArrow/>
   };
 
+  
   return (
 
 

@@ -14,7 +14,7 @@ import s from './PromoCard.module.scss';
 function PromoCard() {
   return (
 
-    <Link to="/" >
+    <Link to="/card" >
 
       <div className={s.promoCard}>
         <span className={s.mark}>акция</span>
