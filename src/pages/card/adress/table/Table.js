@@ -25,7 +25,7 @@ function Table() {
 
       <tr className={s.tr}>
         <td> <Td text="Москва, ул. Науки 25"/> </td>
-        <td> <Td text="пн-сб: вс:"/> </td>
+        <td> <Td text="пн-сб:  вс:"/> </td>
         <td> <Td text="08:00-19:00 09:00-17:00"/> </td>
         <td> <Td text="В наличии"/> </td>
         <td> <Td text="1"/> </td>

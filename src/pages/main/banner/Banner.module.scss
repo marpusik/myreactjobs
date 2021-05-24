@@ -5,10 +5,15 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 25px 120px 20px 70px;
+  padding: 25px 120px 30px 70px;
   margin-bottom: 75px;
 
   background: $accent;
+}
+
+.wrapImgs {
+  transform: scale(1.1);
+  padding: 15px 0 0 20px;
 }
 
 .utv {
@@ -16,10 +21,12 @@
 }
 
 .title {
+  padding-left: 20px;
+
   max-width: 305px;
 
   font-family: SFProDisplay;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1;
   color: #FFFFFF;
