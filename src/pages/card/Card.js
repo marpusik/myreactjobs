@@ -8,6 +8,7 @@ import CardMenu from './cardMenu/CardMenu';
 
 
 import s from './Card.module.scss';
+import ProductsItem from "./carditem/productsitem/ProductsItem";
 
 
 
@@ -17,9 +18,9 @@ function Card() {
   return (
 
     <div className={s.card}>
-      <Breadcrumb />
-      <CardFeatures />
-      <CardMenu />
+        <Breadcrumb />
+        <CardFeatures />
+        <CardMenu />
       <Adress />
 
     </div>
