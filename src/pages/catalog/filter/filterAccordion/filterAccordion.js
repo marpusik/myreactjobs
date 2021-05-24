@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 const useStyles = makeStyles((theme) => ({
     wrapper: {
         boxShadow: "none",
@@ -56,10 +57,8 @@ function FilterAccordion(props) {
           <Typography className={classes.heading}>{props.title}</Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.details}>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
-          </Typography>
+         {props.content}
+         
         </AccordionDetails>
       </Accordion>
         
