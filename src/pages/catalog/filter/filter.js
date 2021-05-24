@@ -10,10 +10,13 @@ import Sale from "../../../components/sale/Sale";
 import Countries from "./filterAccordion/countries/countries";
 
 function Filter() {
+    const active = true;
     return (
         <>
         <header className={s.header}>
-            <FilterTitle text="Параметры"/>
+            <FilterTitle 
+            active={active}
+            text="Параметры"/>
             <FilterTitle text="По марке"/>
             
         </header>

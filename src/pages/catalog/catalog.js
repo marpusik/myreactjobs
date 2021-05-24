@@ -52,7 +52,7 @@ function Catalog() {
        </form>
      </header>
      <section className={s.content}>
-        <aside >
+        <aside className={s.filter}>
           <Filter/>
         </aside>
         <div className={s.card}>
