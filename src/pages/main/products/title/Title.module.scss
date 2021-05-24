@@ -7,5 +7,9 @@
   font-size: 25px;
   color: $primary;
   // letter-spacing: 2px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 

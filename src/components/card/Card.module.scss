@@ -1,9 +1,8 @@
 @import './../../sass/abstracts/vars.scss';
+@import './../../sass/abstracts/mixs.scss';
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@include flex(column);
 
   position: relative;
 
@@ -15,37 +14,33 @@
 
   border: 1px solid #CDCDCD;
   border-radius: $br;
+  text-align: center;
 
   transition: all .2s linear;
 
   &:hover {
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+
+    & .look {
+      opacity: .9;
+    }
+
+    & .title {
+      color: $accent;
+    }
+
+    & .price {
+      color: $accent;
+    }
+
+    & .priceNone {
+      color: $accent;
+    }
+
+    & .report {
+      color: $accent;
+    }
   }
-
-  &:hover .look {
-    opacity: .9;
-
-  }
-
-  &:hover .title {
-    color: $accent;
-  }
-
-  &:hover .price {
-    color: $accent;
-  }
-
-  &:hover .priceNone {
-    color: $accent;
-  }
-
-  &:hover .report {
-    color: $accent;
-  }
-
-
-
-
 }
 
 .title {
@@ -53,26 +48,20 @@
 
   font-family: SFProDisplay;
   font-size: 18px;
-  text-align: center;
   color: $primary;
 }
 
 
 .price {
   font-family: Barlow;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
-  text-align: center;
   color: $primary;
-
 }
 
 .priceNone {
-  font-family: SFProDisplay;
-  font-weight: 700;
+  @extend %sfp;
   font-size: 18px;
-  text-align: center;
-
   color: $primary;
 }
 
@@ -98,9 +87,7 @@
 
   transform: translate(-50%, -50%);
 
-  font-family: SF Pro Display;
   font-size: 20px;
-  text-align: center;
   color: $primary;
 
   background: #FFFFFF;
@@ -108,7 +95,7 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: $br;
 
-  cursor: pointer;
+  @extend %border;
   transition: all .5s linear;
 }
 
@@ -123,6 +110,5 @@
 
   background: $accent;
   border-radius: 10px 0px 0px 0px;
-  border: none;
-  cursor: pointer;
+  @extend %border;
 }

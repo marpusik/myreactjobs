@@ -5,6 +5,28 @@
     justify-content: $justifyContent;
 }
 
+//   @include flex(column);
+//   @include flex();
+//   @include flex(center, flex-start);
+
+
+%border {
+    border: none;
+    cursor: pointer;
+}
+
+// @extend %border;
+
+
+%sfp {
+    font-family: SFProDisplay;
+    font-weight: 700;
+}
+
+// @extend %sfp;
+
+
+
 //   @include font(21px, 1.2, false,center)
 //   @mixin font (value,value1,value2,value4:left){
 //     font-size: $value;
@@ -18,7 +40,7 @@
 //     @font-face {
 //       font-family: $value1;
 //       font-display: swap;
-//       src:  
+//       src:
 //       url('../assets/fonts/Barlow/#{value2}.woff') format('woff'),
 //       url('../assets/fonts/Barlow/#{value2}.woff2') format('woff2');
 //       font-weight: $value3;

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Typography from '@material-ui/core/Typography';
@@ -34,8 +35,6 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-
-
 function Breadcrumb() {
 
   const classes = useStyles();
@@ -45,20 +44,13 @@ function Breadcrumb() {
     <Breadcrumbs separator={<NavigateNextIcon fontSize="smalld" />} aria-label="breadcrumb" className={classes.root}>
       <Link color="inherit" href="/" >
         Главная
- </Link>
+      </Link>
       <Link color="inherit" href="/catalog" >
         Гидроциклы
-    </Link>
-      <Typography color="textPrimary">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</Typography>
+      </Link>
+      <Typography color="textPrimary">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+      </Typography>
     </Breadcrumbs>
-
-
-
-    //     <ul className={s.breadcrumb} >
-    //       <li class={s.item}><a class={s.link} href="tut.by">Главная</a></li>
-    //       <li class={s.item}><a class={s.link} href="tut.by">Гидроциклы</a></li>
-    //       <li class={s.item}>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</li>
-    // </ul >
 
   );
 }

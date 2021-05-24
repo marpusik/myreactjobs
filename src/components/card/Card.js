@@ -2,11 +2,11 @@ import React from 'react';
 import Heart from '../heart/Heart';
 import Sale from '../sale/Sale';
 
+import { ReactComponent as Basket } from './../../assets/icons/BasketIcon.svg';
+
 import { Link } from 'react-router-dom';
 
 import s from './Card.module.scss';
-
-import { ReactComponent as Basket } from './../../assets/icons/BasketIcon.svg';
 
 
 

@@ -1,8 +1,8 @@
+@import './../../sass/abstracts/mixs.scss';
+
 .heart {
   margin-left: auto;
 
-  border: none;
   background-color: transparent;
-  cursor: pointer;
-
+  @extend %border;
 }

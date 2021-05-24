@@ -1,34 +1,30 @@
+@import './../../../../sass/abstracts/mixs.scss';
 @import './../../../../sass/abstracts/vars.scss';
+
 
 .card {
   display: flex;
-  justify-content: flex-start;
 
   width: 370px;
   height: 130px;
 
-  padding: 20px;
+  padding: 19px;
 
   color: $primary;
   background: #FFFFFF;
   border: 1px solid $borderColor;
-  box-sizing: border-box;
   border-radius: $br;
 
-  transition: all  .2s linear;
+  transition: all .2s linear;
 
   &:hover {
     color: $accent;
-
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-
   }
 }
 
 .wrapContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex(column, flex-start);
   margin-right: 40px;
 }
 
@@ -37,7 +33,6 @@
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
   font-size: 23px;
-  letter-spacing: 1.2px;
 }
 
 
@@ -49,7 +44,10 @@
 
   cursor: pointer;
 }
+.wrapImg {
+  margin: 0 auto;
+}
 
 .img {
-  align-self: center;
+  width: 60%;
 }
