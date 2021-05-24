@@ -5,8 +5,9 @@ import Brand from "./filterAccordion/brand/brand";
 import Model from "./filterAccordion/model/model";
 import Available from "./filterAccordion/available/available";
 import NewProducts from "./filterAccordion/newProducts/newProducts";
-import Price from "../../../components/price/Price";
-import Sale from "../../../components/sale/Sale";
+import Price from "./filterAccordion/price/price";
+import Sale from "./filterAccordion/sale/sale";
+
 import Countries from "./filterAccordion/countries/countries";
 
 function Filter() {
