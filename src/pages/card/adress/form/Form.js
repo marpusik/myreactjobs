@@ -23,7 +23,7 @@ function Form() {
         <FormControl component="fieldset"  >
           <RadioGroup defaultValue="Забрать в течение недели"  name="customized-radios"
           style={{flexDirection: "row"}}>
-            <FormControlLabel value="Забрать сегодня" control={<StyledRadio />} label="Забрать сегодня" />
+            <FormControlLabel style={{marginRight: "55px"}}value="Забрать сегодня" control={<StyledRadio />} label="Забрать сегодня" />
             <FormControlLabel value="Забрать в течение недели" control={<StyledRadio />} label="Забрать в течение недели" />
           </RadioGroup>
         </FormControl>

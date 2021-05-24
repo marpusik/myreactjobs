@@ -72,6 +72,8 @@
 }
 
 .titleCard {
+  padding: 0 40px;
+
   font-family: SFProDisplay;
   font-weight: bold;
   font-size: 18px;
@@ -79,24 +81,21 @@
 }
 
 .wrapValidity {
-  padding: 10px;
+  padding: 25px;
+
   height: 25%;
   width: 100%;
+
   background: #F0F0F4;
   border-radius: $br;
-
 }
 
 .validity {
   display: block;
 
-
-
   font-family: SFProDisplay;
   font-size: 18px;
   text-align: center;
-
-
 }
 
 .data {

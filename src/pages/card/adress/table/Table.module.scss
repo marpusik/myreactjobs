@@ -3,7 +3,7 @@
 .table {
   position: relative;
 
-  padding-bottom: 70px;
+  margin-bottom: 215px;
 
   width: 100%;
 
@@ -14,11 +14,12 @@
 
 .tr {
 
-  border-bottom: 1px solid rgba($primary,.1);
+  border-bottom: 1px solid rgba($primary, .1);
 
 }
 
- td, th {
-padding: 20px 0 20px 40px;
+td,
+th {
+  padding: 20px 0 0 20px;
 
- }
+}

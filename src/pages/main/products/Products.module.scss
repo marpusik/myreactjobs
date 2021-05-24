@@ -11,19 +11,20 @@ text-align: left;
 .slider {
 
   min-width: 1200px;
+  margin: 0 -15px;
 
   :global(.slick-prev) {
     width: 20px;
     height: 30px;
     top: 50%;
-    left: -40px;
+    left: -20px;
   }
 
   :global(.slick-next) {
     width: 20px;
     height: 30px;
     top: 50%;
-    right: -8px;
+    right: -20px;
   }
 
 }

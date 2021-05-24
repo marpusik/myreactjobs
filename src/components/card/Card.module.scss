@@ -3,10 +3,12 @@
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   position: relative;
 
   padding: 20px;
+  margin: 0 15px;
 
   width: 270px;
   height: 400px;
@@ -47,8 +49,9 @@
 }
 
 .title {
+  margin-bottom: 20px;
+
   font-family: SFProDisplay;
-  font-weight: 400;
   font-size: 18px;
   text-align: center;
   color: $primary;
@@ -66,7 +69,7 @@
 
 .priceNone {
   font-family: SFProDisplay;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   text-align: center;
 
