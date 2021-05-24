@@ -8,6 +8,7 @@ import Heart from "../../components/heart/Heart";
 import personal from "./../../assets/icons/PersonalIcon.svg";
 import Menu from "./menu/Menu";
 import { ReactComponent as Basket } from './../../assets/icons/BasketIcon.svg';
+import BasketCounter from "./basketCounter/BasketCounter";
 
 
 function Header() {
@@ -58,6 +59,7 @@ function Header() {
           </li>
           <li className={s.socialItem}>
             <Basket fill="#2F3035" style={{cursor: "pointer"}} />
+            <BasketCounter text="1"/>
           </li>
         </ul>
       </nav>
