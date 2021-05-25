@@ -7,7 +7,7 @@ text-align: left;
 .slider {
 
   min-width: 1200px;
-  margin: 0 -15px;
+  transform: translateX(-15px);
 
   :global(.slick-prev) {
     width: 20px;
@@ -24,4 +24,5 @@ text-align: left;
   }
 
 }
+
 

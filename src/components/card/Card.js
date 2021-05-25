@@ -9,20 +9,20 @@ import s from './Card.module.scss';
 
 
 
-function Card({img, title, price, style, catalog}) {
-  
+function Card({img, title, price}) {
+
   return (
 
     <Link to="/card" >
 
-      <div className={ catalog ? `${s.card} ${s.catalog}` : `${s.card}` }>
+      <div className={s.card}>
         <Sale />
         <Heart />
         <img className={s.img} src={img} alt="img" />
         <h3 className={s.title}>{title}</h3>
 
         {price
-        ? <span className={s.price} style={style}>{price} &#8381;  </span>
+        ? <span className={s.price}>{price} &#8381;  </span>
         : <span className={s.priceNone}>нет в наличии</span>}
         {price
         ?<button className={s.btn}>

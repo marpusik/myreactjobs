@@ -61,14 +61,14 @@ function Products(props) {
       <Menu />
 
       <Slider {...settings} className={s.slider}>
-        <Card img={props.data1.img} title={props.data1.title} price={props.data1.price} link={props.data1.link} />
-        <Card img={props.data2.img} title={props.data2.title} price={props.data2.price} link={props.data2.link}/>
-        <Card img={props.data3.img} title={props.data3.title} price={props.data3.price} link={props.data3.link}/>
-        <Card img={props.data4.img} title={props.data4.title} price={props.data4.price} link={props.data4.link}/>
-        <Card img={props.data5.img} title={props.data5.title} price={props.data5.price} link={props.data5.link}/>
-        <Card img={props.data6.img} title={props.data6.title} price={props.data6.price} link={props.data6.link}/>
-        <Card img={props.data7.img} title={props.data7.title} price={props.data7.price} link={props.data7.link}/>
-        <Card img={props.data8.img} title={props.data8.title} price={props.data8.price} link={props.data8.link}/>
+        <Card img={props.data1.img} title={props.data1.title} price={props.data1.price} link={props.data1.link} className={s.margin}/>
+        <Card img={props.data2.img} title={props.data2.title} price={props.data2.price} link={props.data2.link} className={s.margin}/>
+        <Card img={props.data3.img} title={props.data3.title} price={props.data3.price} link={props.data3.link} className={s.margin}/>
+        <Card img={props.data4.img} title={props.data4.title} price={props.data4.price} link={props.data4.link} className={s.margin}/>
+        <Card img={props.data5.img} title={props.data5.title} price={props.data5.price} link={props.data5.link} className={s.margin}/>
+        <Card img={props.data6.img} title={props.data6.title} price={props.data6.price} link={props.data6.link} className={s.margin}/>
+        <Card img={props.data7.img} title={props.data7.title} price={props.data7.price} link={props.data7.link} className={s.margin}/>
+        <Card img={props.data8.img} title={props.data8.title} price={props.data8.price} link={props.data8.link} className={s.margin}/>
       </Slider>
 
 
