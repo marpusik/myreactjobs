@@ -13,10 +13,12 @@ import brp from './../../assets/images/shopItems/spare-parts/brp.png';
 import equipment from './../../assets/images/shopItems/spare-parts/equipment.png';
 import Pagination from '@material-ui/lab/Pagination';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
+import Filter from './filter/filter';
 
 
 
 function Catalog() {
+  const catalog = true;
   return (
    <>
    <main className={s.catalog}>
@@ -52,21 +54,21 @@ function Catalog() {
      </header>
      <section className={s.content}>
         <aside className={s.filter}>
-          CONTENT FILTER
+          <Filter/>
         </aside>
-        <div className={s.card}>
-          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-          <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
-          <Card img={equipment} title="Спасательное снаряжение" />
-          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-          <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
-          <Card img={equipment} title="Спасательное снаряжение" />
-          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-          <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
-          <Card img={equipment} title="Спасательное снаряжение" />
+        <div className={s.card} >
+          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" catalog={catalog} />
+          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" catalog={catalog} />
+          <Card img={brp} title="BRP Audio-Premium System" price="68 000" catalog={catalog} />
+          <Card img={equipment} title="Спасательное снаряжение" catalog={catalog} />
+          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" catalog={catalog} />
+          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" catalog={catalog} />
+          <Card img={brp} title="BRP Audio-Premium System" price="68 000" catalog={catalog} />
+          <Card img={equipment} title="Спасательное снаряжение" catalog={catalog} />
+          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" catalog={catalog} />
+          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" catalog={catalog} />
+          <Card img={brp} title="BRP Audio-Premium System" price="68 000" catalog={catalog} />
+          <Card img={equipment} title="Спасательное снаряжение" catalog={catalog} />
         </div>
      </section>
      <footer className={s.pagination}>

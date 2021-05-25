@@ -5,18 +5,17 @@ import Sale from '../sale/Sale';
 import { ReactComponent as Basket } from './../../assets/icons/BasketIcon.svg';
 
 import { Link } from 'react-router-dom';
-
 import s from './Card.module.scss';
 
 
 
-function Card({img, title, price, style}) {
-
+function Card({img, title, price, style, catalog}) {
+  
   return (
 
     <Link to="/card" >
 
-      <div className={s.card}>
+      <div className={ catalog ? `${s.card} ${s.catalog}` : `${s.card}` }>
         <Sale />
         <Heart />
         <img className={s.img} src={img} alt="img" />
