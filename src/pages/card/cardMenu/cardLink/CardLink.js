@@ -1,14 +1,16 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import  s from './CardLink.module.scss';
 
 
 
 function CardLink(props) {
   return (
-    <a className={s.cardLink} href="tut.by">
+    <Link to="/catalog" className={s.cardLink} href="tut.by">
 {props.text}
-    </a>
+    </Link>
 
   );
 }

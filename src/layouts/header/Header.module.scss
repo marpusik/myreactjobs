@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 270px 1fr;
@@ -22,7 +22,7 @@
 .social {
   display: flex;
   justify-content: space-between;
-  align-self: center;
+  align-items: center;
 }
 .adress {
   font-style: normal;
@@ -30,9 +30,15 @@
   margin: 0;
   align-self: center;
 }
+.socialIcons {
+  padding-right: 20px;
+}
 .socialList {
   display: flex;
   list-style: none;
+}
+.socialItem {
+cursor: pointer;
 }
 .socialItem:nth-child(2) {
   padding-left: 10px;

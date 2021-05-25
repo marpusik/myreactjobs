@@ -1,4 +1,4 @@
-import brp from '../../../../assets/images/shopItems/PWC/brp.png';
+import brp from '../../../../assets/images/shopItems/pwc/brp.png';
 import CardItem from '../CardItem';
 import s from './ProductsItem.module.scss';
 

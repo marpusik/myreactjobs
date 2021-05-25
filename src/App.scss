@@ -11,11 +11,22 @@
   box-sizing: border-box;
 }
 
+button {
+  &:hover {
+    background-color: lighten($accent, 10%);
+
+}
+
+&:active {
+    background-color: darken($accent, 10%);
+}
+}
+
 .App {
+  font-family: SFProDisplay;
   font-size: 10px;
   color: $primary;
   line-height: 1.2;
-  font-family: ProximaNova;
 
   background-color: #ffffff;
 }
