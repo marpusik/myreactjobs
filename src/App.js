@@ -10,7 +10,7 @@ import Catalog from './pages/catalog/catalog';
 import Card from './pages/card/Card';
 import NoMatch from './layouts/404page/noMatch';
 import "./sass/fonts.scss";
-import  './App.scss';
+import './App.scss';
 
 
 function App() {
@@ -18,33 +18,47 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
+
+
       <Router>
-      <Header/>
+
+        <div className="container">
+          <Header />
+        </div>
+
         <Switch>
           <Route exact path='/'>
-                   
-                    <Main />
-                    
+
+            <div className="container">
+              <Main />
+            </div>
+
           </Route>
           <Route exact path='/card'>
-                  
-                  <Card />
-                
+
+            <div className="container">
+              <Card />
+            </div>
+
           </Route>
+
           <Route exact path='/catalog'>
-                
-                  <Catalog />
-                  
+
+            <div className="container">
+              <Catalog />
+            </div>
+
           </Route>
+
+
           <Route path="*">
             <NoMatch />
           </Route>
         </Switch>
-        <Footer/>
+
+        <Footer />
       </Router>
 
-      </div>
     </div>
   );
 }
