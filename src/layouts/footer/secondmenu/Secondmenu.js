@@ -2,7 +2,7 @@ import s from './Secondmenu.module.scss'
 
 function Secondmenu() {
     return (
-        <div className="secondmenu">
+        <div className={s.secondmenu}>
             <h3 className="secondmenu__title">Интернет-магазин</h3>
             <ul className="secondmenu__list">
                 <li className={s.secondmenu__item}><a className={s.secondmenu__link}
