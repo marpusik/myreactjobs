@@ -3,7 +3,7 @@ import s from "./filter.module.scss";
 import FilterAccordion from "./filterAccordion/filterAccordion";
 import Brand from "./filterAccordion/brand/brand";
 import Model from "./filterAccordion/model/model";
-import Available from "./filterAccordion/available/available";
+import Availability from "./filterAccordion/availability/availability";
 import NewProducts from "./filterAccordion/newProducts/newProducts";
 import Price from "./filterAccordion/price/price";
 import Sale from "./filterAccordion/sale/sale";
@@ -22,7 +22,7 @@ function Filter() {
             
         </header>
         <FilterAccordion title="Наличие"
-        content={<Available/>}
+        content={<Availability/>}
         />
         <FilterAccordion title="Новинки"
         content={<NewProducts/>}
