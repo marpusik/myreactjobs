@@ -5,4 +5,8 @@
 
   background-color: transparent;
   @extend %border;
+
+  &:hover {
+    background-color: transparent;
+  }
 }

@@ -45,8 +45,14 @@
   background-color: #FFFFFF;
   @extend %border;
 
+  transition: all .2s linear;
+
   &:hover {
     box-shadow: 3px 5px 20px rgba(28, 28, 28, 0.25);
+    background-color: #e6e6f1;
   }
+
+  &:active {
+    background-color: #a5c1eb;  }
 
 }

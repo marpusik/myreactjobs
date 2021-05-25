@@ -1,6 +1,6 @@
 import React from 'react';
-import Price from '../../../components/price/Price';
 
+import Price from '../../../components/price/Price';
 
 import suzuki from './../../../assets/images/shopItems/engine/suzuki.png';
 

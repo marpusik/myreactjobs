@@ -25,6 +25,19 @@
 
 // @extend %sfp;
 
+// %hover {
+//     &:hover {
+//       background-color: lighten(#1C62CD, 10%);
+
+//   }
+
+//   &:active {
+//       background-color: darken(#1C62CD, 10%);
+//   }
+//   }
+
+// @extend %hover;
+
 
 
 //   @include font(21px, 1.2, false,center)
