@@ -13,6 +13,7 @@ import brp from './../../assets/images/shopItems/spare-parts/brp.png';
 import equipment from './../../assets/images/shopItems/spare-parts/equipment.png';
 import Pagination from '@material-ui/lab/Pagination';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
+import Filter from './filter/filter';
 
 
 
@@ -52,7 +53,7 @@ function Catalog() {
      </header>
      <section className={s.content}>
         <aside className={s.filter}>
-          CONTENT FILTER
+          <Filter/>
         </aside>
         <div className={s.card}>
           <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
