@@ -8,6 +8,7 @@ import Main from './pages/main/Main';
 import Footer from "./layouts/footer/Footer";
 import Catalog from './pages/catalog/catalog';
 import Card from './pages/card/Card';
+import NoMatch from './layouts/404page/noMatch';
 import "./sass/fonts.scss";
 import  './App.scss';
 
@@ -35,6 +36,9 @@ function App() {
                 
                   <Catalog />
                   
+          </Route>
+          <Route path="*">
+            <NoMatch />
           </Route>
         </Switch>
         <Footer/>
