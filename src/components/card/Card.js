@@ -29,6 +29,9 @@ function Card({img, title, price}) {
           <Basket />
         </button>
         :<button className={s.report}>Сообщить о поступлении</button>}
+
+
+
         <div className={s.look}>посмотреть товар</div>
       </div >
 

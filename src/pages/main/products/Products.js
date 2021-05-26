@@ -26,7 +26,7 @@ function Products(props) {
     prevArrow: <SamplePrevArrow/>,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -35,7 +35,7 @@ function Products(props) {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 870,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -43,7 +43,7 @@ function Products(props) {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 580,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
