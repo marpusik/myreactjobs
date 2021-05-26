@@ -17,49 +17,47 @@ function App() {
 
 
   return (
-    <div className="App">
+    <Router>
 
-
-      <Router>
+      <div className="App">
 
         <div className="container">
           <Header />
         </div>
 
         <Switch>
-          <Route exact path='/'>
 
+          <Route exact path='/'>
             <div className="container">
               <Main />
             </div>
-
           </Route>
-          <Route exact path='/card'>
 
+          <Route exact path='/card'>
             <div className="container">
               <Card />
             </div>
-
           </Route>
 
           <Route exact path='/catalog'>
-
             <div className="container">
               <Catalog />
             </div>
-
           </Route>
 
 
           <Route path="*">
             <NoMatch />
           </Route>
+
         </Switch>
 
         <Footer />
-      </Router>
 
-    </div>
+      </div>
+
+    </Router>
+
   );
 }
 

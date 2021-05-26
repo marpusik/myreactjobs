@@ -25,6 +25,33 @@
 
 // @extend %sfp;
 
+
+
+@mixin media($width, $type:max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == min {
+            $width: $width + 1px;
+        }
+    }
+    @media (#{$type}-width: $width) {
+        @content;
+    }
+}
+
+// @include media (sm) {
+
+// }
+
+
+
+
+
+
+
+
+
+
 // %hover {
 //     &:hover {
 //       background-color: lighten(#1C62CD, 10%);

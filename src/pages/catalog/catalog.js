@@ -22,8 +22,9 @@ function Catalog() {
   return (
    <>
    <main className={s.catalog}>
-     <Breadcrumb />
      <article className={s.product}>
+     <Breadcrumb />
+
      <Title
      text="Гидроциклы"
      />
