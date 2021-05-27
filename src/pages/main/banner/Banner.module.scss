@@ -4,19 +4,41 @@
 .banner {
   @include flex();
 
+  position: relative;
+
   padding: 25px 120px 30px 70px;
   margin-bottom: 75px;
 
   background: $accent;
+
+  @include media (xl) {
+    flex-direction: column;
+
+    min-height: 180px;
+    
+    padding: 25px;
+  }
+
+
 }
 
-.wrapImgs {
-  transform: scale(1.1);
-  padding: 15px 0 0 20px;
-}
 
 .utv {
   transform: rotateY(180deg);
+  @include media (xl) {
+    position: absolute;
+    right: 20px;
+    top: 60px
+  }
+}
+
+.atv {
+  @include media (xl) {
+    position: absolute;
+   left: 20px;
+    top: 60px
+  }
+
 }
 
 .title {
@@ -28,6 +50,15 @@
   font-size: 36px;
   line-height: 1;
   color: #FFFFFF;
+
+  @include media (xl) {
+    max-width: unset;
+
+    padding-bottom: 20px;
+
+    font-size: clamp(16px, 4vw, 36px);
+  }
+
 
 }
 
@@ -56,11 +87,8 @@
     background-color: #a5c1eb;
   }
 
-  @include media (lg) {
-    background-color: red;
-}
-@include media (md) {
-  background-color: blue;
-}
+  @include media (xl) {
+        font-size: clamp(16px, 4vw, 24px);
+  }
 
 }

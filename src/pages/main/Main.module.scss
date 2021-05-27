@@ -9,8 +9,27 @@
 
 .promo {
   @include flex();
+  // display: grid;
+  // gap: 25px;
+  // grid-template-columns: 74% 1fr;
 
   padding-bottom: 85px;
+
+  @include media (md) {
+    flex-direction: column;
+  }
+
+}
+.promoWrap {
+  display: flex;
+}
+
+.promoMob {
+display: none;
+
+@include media (md) {
+  display: block;
+}
 }
 
 

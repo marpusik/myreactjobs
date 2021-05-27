@@ -20,6 +20,11 @@
   &:hover {
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
   }
+
+  @include media (md) {
+    margin-top: 50px;
+  }
+
 }
 
 .wrapPrice {

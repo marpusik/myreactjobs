@@ -9,6 +9,11 @@ import personal from "./../../assets/icons/PersonalIcon.svg";
 import Menu from "./menu/Menu";
 import { ReactComponent as Basket } from './../../assets/icons/BasketIcon.svg';
 import BasketCounter from "./basketCounter/BasketCounter";
+import Mobile from "./mobile/Mobile";
+import Burger from "./burger/Burger";
+
+
+
 
 
 function Header() {
@@ -66,6 +71,8 @@ function Header() {
       </nav>
     </header>
     <Menu/>
+    <Burger/>
+    <Mobile />
    </>
   );
 }
