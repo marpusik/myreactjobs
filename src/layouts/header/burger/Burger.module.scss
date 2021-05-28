@@ -23,11 +23,19 @@
     background: transparent;
   }
 
-
   @include media (md) {
     display: block;
-
   }
+
+  @include media (xs) {
+    width: 40px;
+    height: 30px;
+
+    left: 20px;
+    top: 16px;
+  }
+
+
 
 }
 

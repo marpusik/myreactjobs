@@ -7,6 +7,12 @@
   padding-bottom: 85px;
 }
 
+.radioBtns {
+  @include media (sm) {
+    @include flex(column, flex-start);
+  }
+}
+
 .wrapInput {
   position: relative;
 }

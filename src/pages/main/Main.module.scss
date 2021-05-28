@@ -5,6 +5,11 @@
   padding: 95px 0;
 
   text-align: left;
+
+  @include media (md) {
+    padding-top: 50px;
+
+  }
 }
 
 .promo {
@@ -20,16 +25,31 @@
   }
 
 }
+
 .promoWrap {
   display: flex;
+  justify-content: space-evenly;
+
+  width: 100%;
+
+  @media (max-width: 620px) {
+    justify-content: center;
+  }
 }
+
+
+
 
 .promoMob {
-display: none;
+  display: none;
 
-@include media (md) {
-  display: block;
-}
+  @include media (md) {
+    display: block;
+  }
+
+  @media (max-width: 620px) {
+    display: none;
+  }
 }
 
 
@@ -53,5 +73,3 @@ display: none;
 
   transition: all .2s linear;
 }
-
-

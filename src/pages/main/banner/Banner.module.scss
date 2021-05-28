@@ -15,20 +15,31 @@
     flex-direction: column;
 
     min-height: 180px;
-    
+
     padding: 25px;
   }
 
 
 }
 
+.img {
+  @include media (sm) {
+    transform: scaleX(.9)
+  }
+}
 
 .utv {
   transform: rotateY(180deg);
   @include media (xl) {
     position: absolute;
     right: 20px;
-    top: 60px
+    top: 80px
+  }
+
+  @include media (sm) {
+    @include media (sm) {
+      transform: scale(.8, .7);
+    }
   }
 }
 
@@ -36,7 +47,11 @@
   @include media (xl) {
     position: absolute;
    left: 20px;
-    top: 60px
+    top: 80px
+  }
+
+  @include media (sm) {
+    transform: scale(.8, .8) rotateY(180deg);
   }
 
 }
@@ -78,6 +93,18 @@
 
   transition: all .2s linear;
 
+  @include media (xl) {
+    font-size: clamp(16px, 4vw, 24px);
+}
+
+  @include media (sm) {
+    width: 115%;
+    min-height: 55px;
+
+    font-size: clamp(16px, 2vw, 24px);
+
+  }
+
   &:hover {
     box-shadow: 3px 5px 20px rgba(28, 28, 28, 0.25);
     background-color: #e6e6f1;
@@ -87,8 +114,5 @@
     background-color: #a5c1eb;
   }
 
-  @include media (xl) {
-        font-size: clamp(16px, 4vw, 24px);
-  }
 
 }

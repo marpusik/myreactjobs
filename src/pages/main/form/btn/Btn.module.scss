@@ -11,6 +11,10 @@
   font-family: SFProDisplay;
   font-size: 20px;
   @extend %border;
+
+  @include media (sm) {
+    width: 50%;
+  }
 }
 
 .btn {
