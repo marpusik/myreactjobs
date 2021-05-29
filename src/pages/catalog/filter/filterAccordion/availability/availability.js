@@ -69,17 +69,16 @@ const useStyles = makeStyles({
 
  
   
-function NewProducts() {
+function Availability() {
     
     return (
         <FormControl component="fieldset" >
-        <RadioGroup defaultValue="all" aria-label="newProducts" name="newProducts" row >
-          <FormControlLabel value="all" control={<StyledRadio />} label="Все" />
-          <FormControlLabel value="new" control={<StyledRadio />} label="Новинки" />
-          <FormControlLabel value="sale" control={<StyledRadio />} label="Акции" />
+        <RadioGroup defaultValue="inStock" aria-label="availability" name="availability" row >
+          <FormControlLabel value="inStock" control={<StyledRadio />} label="В наличие" />
+          <FormControlLabel value="onOrder" control={<StyledRadio />} label="Под заказ" />
         </RadioGroup>
       </FormControl>
     );
 }
 
-export default NewProducts;
+export default Availability;

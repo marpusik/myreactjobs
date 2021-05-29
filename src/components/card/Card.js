@@ -5,12 +5,11 @@ import Sale from '../sale/Sale';
 import { ReactComponent as Basket } from './../../assets/icons/BasketIcon.svg';
 
 import { Link } from 'react-router-dom';
-
 import s from './Card.module.scss';
 
 
 
-function Card({img, title, price, style}) {
+function Card({img, title, price}) {
 
   return (
 
@@ -23,13 +22,16 @@ function Card({img, title, price, style}) {
         <h3 className={s.title}>{title}</h3>
 
         {price
-        ? <span className={s.price} style={style}>{price} &#8381;  </span>
+        ? <span className={s.price}>{price} &#8381;  </span>
         : <span className={s.priceNone}>нет в наличии</span>}
         {price
         ?<button className={s.btn}>
           <Basket />
         </button>
         :<button className={s.report}>Сообщить о поступлении</button>}
+
+
+
         <div className={s.look}>посмотреть товар</div>
       </div >
 

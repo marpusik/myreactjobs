@@ -18,11 +18,13 @@ import Filter from './filter/filter';
 
 
 function Catalog() {
+  const catalog = true;
   return (
    <>
    <main className={s.catalog}>
-     <Breadcrumb />
      <article className={s.product}>
+     <Breadcrumb />
+
      <Title
      text="Гидроциклы"
      />
@@ -55,19 +57,19 @@ function Catalog() {
         <aside className={s.filter}>
           <Filter/>
         </aside>
-        <div className={s.card}>
-          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-          <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
-          <Card img={equipment} title="Спасательное снаряжение" />
-          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-          <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
-          <Card img={equipment} title="Спасательное снаряжение" />
-          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" />
-          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" />
-          <Card img={brp} title="BRP Audio-Premium System" price="68 000" />
-          <Card img={equipment} title="Спасательное снаряжение" />
+        <div className={s.card} >
+          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" catalog={catalog} />
+          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" catalog={catalog} />
+          <Card img={brp} title="BRP Audio-Premium System" price="68 000" catalog={catalog} />
+          <Card img={equipment} title="Спасательное снаряжение" catalog={catalog} />
+          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" catalog={catalog} />
+          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" catalog={catalog} />
+          <Card img={brp} title="BRP Audio-Premium System" price="68 000" catalog={catalog} />
+          <Card img={equipment} title="Спасательное снаряжение" catalog={catalog} />
+          <Card img={bag} title="Водонепроницаемый Рюкзак" price="9 800" catalog={catalog} />
+          <Card img={airflow} title="Спасательный жилет BRP Men's Airflow PFD" price="6 900" catalog={catalog} />
+          <Card img={brp} title="BRP Audio-Premium System" price="68 000" catalog={catalog} />
+          <Card img={equipment} title="Спасательное снаряжение" catalog={catalog} />
         </div>
      </section>
      <footer className={s.pagination}>
