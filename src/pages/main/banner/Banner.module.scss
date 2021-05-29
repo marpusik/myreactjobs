@@ -53,6 +53,14 @@
   }
 
   &:active {
-    background-color: #a5c1eb;  }
+    background-color: #a5c1eb;
+  }
+
+  @include media (lg) {
+    background-color: red;
+}
+@include media (md) {
+  background-color: blue;
+}
 
 }

@@ -6,22 +6,27 @@ text-align: left;
 
 .slider {
 
-  min-width: 1200px;
-  margin: 0 -15px;
-
   :global(.slick-prev) {
     width: 20px;
     height: 30px;
     top: 50%;
-    left: -20px;
+    left: -40px;
   }
 
   :global(.slick-next) {
     width: 20px;
     height: 30px;
     top: 50%;
-    right: -20px;
+    right: -40px;
   }
 
+  :global(.slick-list) {
+      padding: 15px;
+      margin: -15px;
+  }
+
+
+
 }
+
 

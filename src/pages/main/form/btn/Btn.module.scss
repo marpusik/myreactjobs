@@ -8,10 +8,9 @@
   margin-bottom: 25px;
 
   border-radius: 5px;
-  font-family: SF Pro Display;
+  font-family: SFProDisplay;
   font-size: 20px;
   @extend %border;
-
 }
 
 .btn {
@@ -24,7 +23,8 @@
   font-family: SF Pro Display;
   font-size: 20px;
 
-  cursor: pointer;
+  @extend %border;
+
 
   &[type=radio] {
     display: none;
