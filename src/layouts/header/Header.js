@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import s from "./Header.module.scss";
 import HeaderLink from "./headerLink/HeaderLink";
@@ -17,6 +17,13 @@ import Burger from "./burger/Burger";
 
 
 function Header() {
+
+ const [showMenu, setShowMenu] = useState(false);
+
+ const handleOnClick = () => {
+  setShowMenu(!showMenu)
+ }
+
   return (
     <>
     <header className={s.header}>
@@ -71,8 +78,8 @@ function Header() {
       </nav>
     </header>
     <Menu/>
-    <Burger/>
-    <Mobile />
+    <Burger showMenu={showMenu} handleOnClick={handleOnClick}/>
+    <Mobile showMenu={showMenu}/>
    </>
   );
 }

@@ -22,13 +22,16 @@ import s from './Mobile.module.scss';
 
 
 
-function Mobile() {
+function Mobile({showMenu}) {
 
+const showMobileMenu = showMenu
+? s.mobile + " " + s.active
+: s.mobile
 
   return (
 
 
-    <nav className={s.mobile}>
+    <nav className={showMobileMenu}>
       <ul className={s.menuList}>
 
         <li className={s.item}>

@@ -9,12 +9,15 @@ import s from './Burger.module.scss';
 
 
 
-function Burger() {
+function Burger({showMenu, handleOnClick}) {
 
+const burgerClass = showMenu
+? s.burgerLine + " " + s.active
+: s.burgerLine
 
   return (
-    <button className={s.burger}>
-      <span className={s.burgerLine}> </span>
+    <button className={s.burger} onClick={() => handleOnClick()}>
+      <span className={burgerClass}> </span>
     </button>
 
   );

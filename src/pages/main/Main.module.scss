@@ -22,6 +22,7 @@
 
   @include media (md) {
     flex-direction: column;
+    padding-bottom: 55px;
   }
 
 }
@@ -72,4 +73,9 @@
   @extend %border;
 
   transition: all .2s linear;
+
+  @include media (xxl) {
+    margin: 55px auto;
+
+  }
 }

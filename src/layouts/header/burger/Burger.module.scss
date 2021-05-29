@@ -19,12 +19,15 @@
   transition: all .5s linear;
   z-index: 25;
 
-  &:hover {
-    background: transparent;
-  }
 
   @include media (md) {
     display: block;
+
+    // width: 40px;
+    // height: 30px;
+
+    // left: 20px;
+    // top: 16px;
   }
 
   @include media (xs) {
@@ -34,6 +37,11 @@
     left: 20px;
     top: 16px;
   }
+
+  &:hover {
+    background: transparent;
+  }
+
 
 
 

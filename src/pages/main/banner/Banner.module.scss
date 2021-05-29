@@ -30,6 +30,7 @@
 
 .utv {
   transform: rotateY(180deg);
+
   @include media (xl) {
     position: absolute;
     right: 20px;
@@ -37,21 +38,28 @@
   }
 
   @include media (sm) {
-    @include media (sm) {
-      transform: scale(.8, .7);
-    }
+    transform: scale(.8, .7);
+  }
+
+  @include media (xs) {
+    display: none;
   }
 }
+
 
 .atv {
   @include media (xl) {
     position: absolute;
-   left: 20px;
+    left: 20px;
     top: 80px
   }
 
   @include media (sm) {
     transform: scale(.8, .8) rotateY(180deg);
+  }
+
+  @include media (xs) {
+    display: none;
   }
 
 }
@@ -70,9 +78,17 @@
     max-width: unset;
 
     padding-bottom: 20px;
+    padding-left: 0;
 
+    text-align: center;
     font-size: clamp(16px, 4vw, 36px);
   }
+
+  @include media (xs) {
+    text-align: center;
+    font-size: 24px;
+  }
+
 
 
 }
@@ -95,14 +111,14 @@
 
   @include media (xl) {
     font-size: clamp(16px, 4vw, 24px);
-}
+  }
 
   @include media (sm) {
-    width: 115%;
+    padding: 0 10px;
+    width: 100%;
     min-height: 55px;
 
     font-size: clamp(16px, 2vw, 24px);
-
   }
 
   &:hover {
