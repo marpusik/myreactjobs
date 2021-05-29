@@ -8,7 +8,6 @@ import clsx from 'clsx';
 
 const useStyles = makeStyles({
     root: {
-      
       '&:hover': {
         backgroundColor: 'transparent',
       },
