@@ -7,7 +7,7 @@
   text-align: left;
 
   @include media (xxl) {
-   align-items: center;
+    align-items: center;
   }
 }
 
@@ -32,6 +32,11 @@
   @media (max-width: 635px) {
     width: 270px;
   }
+
+  @media (max-width: 420px) {
+    width: 220px;
+  }
+
 }
 
 :global(.slick-prev) {
@@ -61,15 +66,24 @@
 :global(.slick-list) {
   padding: 15px;
   margin: -15px;
+
+
+  @media (max-width: 420px) {
+    padding: 0 10px;
+    margin: 0px -35px;
+  }
+
 }
 
 :global(.slick-dots) {
   margin: -15px 0;
+
+  @media (max-width: 420px) {
+   width: 110%;
+}
 }
 
 :global(.slick-slider) {
   margin: 0 auto;
-
-// width: 810px;
 
 }

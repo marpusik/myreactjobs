@@ -81,7 +81,7 @@ function Products(props) {
         }
       },
       {
-        breakpoint: 395,
+        breakpoint: 420,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -92,6 +92,8 @@ function Products(props) {
 
         }
       }
+
+
     ]
   };
 
