@@ -1,16 +1,40 @@
+@import './../../sass/abstracts/mixs.scss';
+@import './../../sass/abstracts/vars.scss';
+
+
+
 .header {
   width: 100%;
   padding-bottom: 10px;
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 270px 1fr;
+
+  position: relative;
+
+  @include media (xl) {
+    grid-template-columns: 1fr 170px 1fr;
+  }
+
+
+
 }
 .menu {
   align-self: center;
+
+@include media (md) {
+    display: none;
+}
+
 }
 .logo {
   justify-self: center;
+
+  @include media (md) {
+grid-column-start: 2;
+  }
 }
+
 .menuList {
   display: flex;
   justify-content: space-between;
@@ -23,12 +47,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include media (md) {
+flex-direction: row-reverse;
+  }
 }
 .adress {
   font-style: normal;
   padding: 0;
   margin: 0;
   align-self: center;
+
+  @include media (md) {
+    display: none;
+}
 }
 .socialIcons {
   padding-right: 20px;

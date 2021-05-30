@@ -5,12 +5,52 @@
   padding: 95px 0;
 
   text-align: left;
+
+  @include media (md) {
+    padding-top: 50px;
+
+  }
 }
 
 .promo {
   @include flex();
+  // display: grid;
+  // gap: 25px;
+  // grid-template-columns: 74% 1fr;
 
   padding-bottom: 85px;
+
+  @include media (md) {
+    flex-direction: column;
+    padding-bottom: 55px;
+  }
+
+}
+
+.promoWrap {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 100%;
+
+  @media (max-width: 620px) {
+    justify-content: center;
+  }
+}
+
+
+
+
+.promoMob {
+  display: none;
+
+  @include media (md) {
+    display: block;
+  }
+
+  @media (max-width: 620px) {
+    display: none;
+  }
 }
 
 
@@ -33,6 +73,9 @@
   @extend %border;
 
   transition: all .2s linear;
+
+  @include media (xxl) {
+    margin: 55px auto;
+
+  }
 }
-
-

@@ -1,4 +1,5 @@
 @import './../../../../../sass/abstracts/vars.scss';
+@import './../../../../../sass/abstracts/mixs.scss';
 
 .link {
   margin-right: 50px;
@@ -12,6 +13,10 @@
   border-bottom: 2px solid transparent;
 
   transition: all .2s linear;
+
+  @include media (sm) {
+    margin: 0 10px;
+  }
 
   &:hover {
     border-bottom: 2px solid $accent;

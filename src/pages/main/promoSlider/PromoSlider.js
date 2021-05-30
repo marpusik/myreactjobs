@@ -26,7 +26,7 @@ function PromoSlider() {
       <Swiper cssMode={true} navigation={true} pagination={true} mousewheel={true} keyboard={true}>
         <SwiperSlide>
           <img className={s.img} src={slider} alt="" />
-          <h2 className={s.title}>Почувствуй скорость и экстрим</h2>
+          <h2 className={s.title}>Почувствуй скорость&nbsp;и экстрим</h2>
         </SwiperSlide>
         <SwiperSlide>
           <img className={s.img} src={slider} alt="" />
