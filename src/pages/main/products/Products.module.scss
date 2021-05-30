@@ -5,6 +5,10 @@
   @include flex(column, flex-start);
 
   text-align: left;
+
+  @include media (xxl) {
+   align-items: center;
+  }
 }
 
 .slider {
@@ -16,11 +20,18 @@
     width: 90%;
   }
 
-  @include media (lg) {
-    width: 100%;
+  @include media (xxl) {
+    // width: 100%;
+    width: 900px;
   }
 
+  @include media (md) {
+    width: 570px;
+  }
 
+  @media (max-width: 635px) {
+    width: 270px;
+  }
 }
 
 :global(.slick-prev) {
@@ -58,4 +69,7 @@
 
 :global(.slick-slider) {
   margin: 0 auto;
+
+// width: 810px;
+
 }

@@ -13,4 +13,8 @@
   @include media(xl) {
     grid-template-columns: repeat(auto-fill, 370px);
   }
+
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr;
+  }
 }

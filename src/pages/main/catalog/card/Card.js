@@ -13,7 +13,7 @@ function Card({ title, img }) {
 
         <div className={s.wrapContent}>
           <h3 className={s.caption}>{title}</h3>
-          <span className={s.more} >Подробнее 	&gt;</span>
+          <span className={s.more} >Подробнее&gt;</span>
         </div>
         <div className={s.wrapImg}>
           <img className={s.img} src={img} alt="card" />

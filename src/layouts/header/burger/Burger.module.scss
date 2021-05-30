@@ -16,7 +16,7 @@
   border: 0;
   outline: 1px solid transparent;
   cursor: pointer;
-  transition: all .5s linear;
+  transition: all .2s linear;
   z-index: 25;
 
 
@@ -40,7 +40,18 @@
 
   &:hover {
     background: transparent;
+
+    & .burgerLine,
+    & .burgerLine::after,
+    & .burgerLine::before,
+    & .burgerLine.active::before,
+    & .burgerLine.active::after {
+        background-color: $accent;
+        transition: .2s;
+    }
   }
+
+
 
 
 
@@ -77,7 +88,7 @@
     height: 0;
 
     border: 0;
-    transition: all .5s linear;
+    transition: all .2s linear;
     z-index: 25;
 
     &::after {
