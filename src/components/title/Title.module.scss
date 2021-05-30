@@ -1,9 +1,9 @@
 @import './../../sass/abstracts/vars.scss';
+@import './../../sass/abstracts/mixs.scss';
 
 .title {
   margin-top: 40px;
-  font-family: SFProDisplay;
-  font-weight: 700;
+  @extend %sfp;
   font-size: 30px;
   color: $primary;
 }

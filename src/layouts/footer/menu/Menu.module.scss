@@ -1,3 +1,12 @@
-.menu{
+@import '../../../sass/abstracts/vars';
 
+.menu{
+  font-size: 14px;
+  margin: 40px 0 0 100px;
+}
+.menu__item{
+  padding-top: 5px;
+}
+.menu__link{
+  color: $primary;
 }

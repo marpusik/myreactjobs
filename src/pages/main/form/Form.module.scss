@@ -1,39 +1,16 @@
 @import './../../../sass/abstracts/vars.scss';
+@import './../../../sass/abstracts/mixs.scss';
 
 .form {
   position: relative;
 
-  padding-bottom: 70px;
-
+  padding-bottom: 85px;
 }
 
-
 .radioBtns {
-
-
-  & input[type=radio] {
-    display: none;
+  @include media (sm) {
+    @include flex(column, flex-start);
   }
-
-
-  & label {
-    display: inline-block;
-
-    padding: 10px 25px;
-    margin-bottom: 25px;
-
-    border-radius: 5px;
-    font-family: SFProDisplay;
-    font-size: 20px;
-    cursor: pointer;
-
-  }
-
-  & input[type=radio]:checked+label {
-    background-color: #F0F0F4;
-    font-weight: bold;
-  }
-
 }
 
 .wrapInput {
@@ -50,10 +27,14 @@
   border: none;
 
   &::placeholder {
-
     font-family: SFProDisplay;
     font-size: 16px;
     color: #656464;
+  }
+
+  &:focus::placeholder {
+    transform: translateX(-90%);
+    transition: all 5s linear;
   }
 }
 
@@ -65,10 +46,16 @@
 
   color: #ffffff;
   text-transform: uppercase;
+  font-family: SFProDisplay;
+  letter-spacing: 0.2em;
 
   background: $accent;
   border-radius: $br;
-  cursor: pointer;
+  @extend %border;
 
   transform: translateX(-100%);
+
+  @include media (xs) {
+    width: 100px;
+  }
 }

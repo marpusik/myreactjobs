@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Btn from './btn/Btn';
 
 
 import s from './Form.module.scss';
@@ -6,25 +7,41 @@ import s from './Form.module.scss';
 
 
 function Form() {
+
+  const [checkedValue, setCheckedValue] = useState("Поиск по марке")
+
+  const handleOnChangeCheckedValue = (value) => {
+    setCheckedValue(value)
+  }
+
+  const active = true;
   return (
-
     <form className={s.form}>
+
       <div className={s.radioBtns}>
-
-        <input id="radio1" type="radio" name="search" value="Поиск по номеру" />
-        <label for="radio1">Поиск по номеру</label>
-
-        <input id="radio2" type="radio" name="search" value="Поиск по марке" checked />
-        <label for="radio2">Поиск по марке</label>
-
-
-        <input id="radio3" type="radio" name="search" value="Поиск по названию товара" />
-        <label for="radio3">Поиск по названию товара</label>
-
+        <Btn
+          checkedValue={checkedValue}
+          handleOnChangeCheckedValue={handleOnChangeCheckedValue}
+          text="Поиск по номеру"
+          value="Поиск по номеру"
+          label="Поиск по номеру" />
+        <Btn
+          checkedValue={checkedValue}
+          handleOnChangeCheckedValue={handleOnChangeCheckedValue}
+          active={active}
+          text="Поиск по марке"
+          value="Поиск по марке"
+          label="Поиск по марке" />
+        <Btn
+          checkedValue={checkedValue}
+          handleOnChangeCheckedValue={handleOnChangeCheckedValue}
+          text="Поиск по названию товара"
+          value="Поиск по названию товара"
+          label="Поиск по названию товара" />
       </div>
 
-      <div className={s.wrapInput}>
 
+      <div className={s.wrapInput}>
         <input className={s.input} type="text" placeholder="Введите марку" />
         <button className={s.searchBtn}>ИСКАТЬ</button>
       </div>

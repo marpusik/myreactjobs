@@ -1,8 +1,12 @@
+@import './../../sass/abstracts/mixs.scss';
+
 .heart {
-  text-align: right;
+  margin-left: auto;
 
-  border: none;
   background-color: transparent;
-  cursor: pointer;
+  @extend %border;
 
+  &:hover {
+    background-color: transparent;
+  }
 }

@@ -1,24 +1,15 @@
 @import './../../../../sass/abstracts/vars.scss';
+@import './../../../../sass/abstracts/mixs.scss';
 
 
 .menu {
-margin: 25px 0 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-}
+    margin: 25px 0 35px;
 
-
-.link {
-  margin-right: 50px;
-  padding-bottom: 10px;
-
-  font-family: SFProDisplay;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-align: center;
-  color: $primary;
-
-  &:hover {
-    border-bottom: 2px solid #1C62CD;
-  }
-
+    @include media (lg) {
+        margin: 25px auto 35px;
+      }
 }

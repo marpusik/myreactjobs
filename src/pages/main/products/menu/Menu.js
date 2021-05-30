@@ -1,19 +1,23 @@
 import React from 'react';
 
+// import { Link } from 'react-router-dom';
+
 import s from './Menu.module.scss';
+import MenuLink from './menuLink/MenuLink';
 
 
 
 function Menu() {
   return (
     <nav className={s.menu}>
-        <a className={s.link} href="tut.by">запчасти</a>
-        <a className={s.link} href="tut.by">моторы</a>
-        <a className={s.link} href="tut.by">шины </a>
-        <a className={s.link} href="tut.by">электроника</a>
-        <a className={s.link} href="tut.by">инструменты</a>
-        <a className={s.link} href="tut.by">аксессуары </a>
-      </nav>
+      <MenuLink text="запчасти" />
+      <MenuLink text="моторы" />
+      <MenuLink text="шины" />
+      <MenuLink text="электроника" />
+      <MenuLink text="инструменты" />
+      <MenuLink text="аксессуары" />
+
+    </nav>
   )
 
 }

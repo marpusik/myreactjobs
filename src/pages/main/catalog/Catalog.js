@@ -9,8 +9,6 @@ import snow from './../../../assets/images/pages/snowmobiles.png'
 import utv from './../../../assets/images/pages/utv.png'
 import engine from './../../../assets/images/pages/engines.png'
 
-
-
 import s from './Catalog.module.scss';
 
 
@@ -18,13 +16,13 @@ function Catalog() {
   return (
 
     <div className={s.catalog}>
-    <Card title="Квадроциклы" img={atv} />
-    <Card title="Гидроциклы" img={pwc} />
-    <Card title="Катера" img={boat} />
-    <Card title="Снегоходы" img={snow} />
-    <Card title="Вездеходы" img={utv} />
-    <Card title="Двигатели" img={engine} />
-  </div>
+      <Card title="Квадроциклы" img={atv} />
+      <Card title="Гидроциклы" img={pwc} />
+      <Card title="Катера" img={boat} />
+      <Card title="Снегоходы" img={snow} />
+      <Card title="Вездеходы" img={utv} />
+      <Card title="Двигатели" img={engine} />
+    </div>
   );
 }
 

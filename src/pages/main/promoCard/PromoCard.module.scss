@@ -11,14 +11,31 @@
   height: 400px;
 
   color: $primary;
-  border: 1px solid #CDCDCD;
+  border: 1px solid $borderColor;
   border-radius: $br;
   text-align: center;
+
+  transition: all .2s linear;
+
+  @include media (md) {
+    margin-top: 50px;
+  }
+
+  
+
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  }
+
+
 }
 
 .wrapPrice {
-  padding: 5px;
   align-self: flex-end;
+
+  padding: 5px;
+
   text-align: right;
 }
 
@@ -27,7 +44,7 @@
   top: 0;
   left: 0;
 
-  padding: 8px 10px;
+  padding: 5px 20px;
 
   font-family: Proxima Nova;
   font-size: 12px;
@@ -41,7 +58,8 @@
 
 .priceOld {
   display: block;
-   position: relative;
+
+  position: relative;
 
   font-family: Barlow;
   font-size: 14px;
@@ -50,14 +68,14 @@
   &::before {
     content: "";
 
-    position: absolute;
     width: 60px;
+
+    position: absolute;
     top: 8px;
     left: 40px;
 
-    border: 0.5px solid #C4C4C4;
+    border: 0.5px solid $lightText;
     transform: rotate(-5.33deg);
-
   }
 }
 
@@ -66,35 +84,34 @@
 }
 
 .titleCard {
-  font-family: SFProDisplay;
-  font-weight: bold;
+  padding: 0 40px;
+
+  @extend %sfp;
   font-size: 18px;
+
   text-align: center;
 }
 
 .wrapValidity {
-  padding: 10px;
+  padding: 25px;
+
   height: 25%;
   width: 100%;
-  background: #F0F0F4;
-  border-radius: $br;
 
+  background: $bg;
+  border-radius: $br;
 }
 
 .validity {
   display: block;
 
-
-
   font-family: SFProDisplay;
   font-size: 18px;
   text-align: center;
-
-
 }
 
 .data {
   font-family: Barlow;
-  font-weight: bold;
+  font-weight: 700;
   color: $accent;
 }

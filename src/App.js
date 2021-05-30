@@ -8,41 +8,56 @@ import Main from './pages/main/Main';
 import Footer from "./layouts/footer/Footer";
 import Catalog from './pages/catalog/catalog';
 import Card from './pages/card/Card';
+import NoMatch from './layouts/404page/noMatch';
 import "./sass/fonts.scss";
-import  './App.scss';
+import './App.scss';
 
 
 function App() {
 
 
   return (
-    <div className="App">
-      <div className="container">
-      <Router>
-      <Header/>
-        <Switch>
-          <Route exact path='/'>
-                   
-                    <Main />
-                    
-          </Route>
-          <Route exact path='/card'>
-                  
-                  <Card />
-                
-          </Route>
-          <Route exact path='/catalog'>
-                
-                  <Catalog />
-                  
-          </Route>
-        </Switch>
-        <Footer/>
-      </Router>
+    <Router>
 
+      <div className="App">
+
+        <div className="container">
+          <Header />
+        </div>
+
+        <Switch>
+
+          <Route exact path='/'>
+            <div className="container">
+              <Main />
+            </div>
+          </Route>
+
+          <Route exact path='/card'>
+            <div className="container">
+              <Card />
+            </div>
+          </Route>
+
+          <Route exact path='/catalog'>
+            <div className="container">
+              <Catalog />
+            </div>
+          </Route>
+
+
+          <Route path="*">
+            <NoMatch />
+          </Route>
+
+        </Switch>
+
+        <Footer />
 
       </div>
-    </div>
+
+    </Router>
+
   );
 }
 
