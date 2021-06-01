@@ -8,15 +8,14 @@ import clsx from 'clsx';
 
 const useStyles = makeStyles({
     root: {
-      
       '&:hover': {
         backgroundColor: 'transparent',
       },
     },
     icon: {
       borderRadius: '10%',
-      width: 12,
-      height: 12,
+      width: 14,
+      height: 14,
       boxShadow: 'inset 0 0 0 1px rgba(16,22,26,.2), inset 0 -1px 0 rgba(16,22,26,.1)',
       backgroundColor: '#fffff',
       opacity: 1,

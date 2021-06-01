@@ -1,7 +1,13 @@
 @import './../../../sass/abstracts/mixs.scss';
+@import './../../../sass/abstracts/vars.scss';
 
 .menu {
   background-color: #F0F0F4;
+
+  @include media (md) {
+    display: none;
+
+}
 }
 
 .list {

@@ -9,14 +9,14 @@ import s from './Card.module.scss';
 
 
 
-function Card({img, title, price}) {
+function Card({img, title, price, sale}) {
 
   return (
 
     <Link to="/card" >
 
       <div className={s.card}>
-        <Sale />
+        {sale && <Sale />}
         <Heart />
         <img className={s.img} src={img} alt="img" />
         <h3 className={s.title}>{title}</h3>

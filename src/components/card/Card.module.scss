@@ -2,12 +2,11 @@
 @import './../../sass/abstracts/mixs.scss';
 
 .card {
-@include flex(column);
+  @include flex(column);
 
   position: relative;
 
   padding: 20px;
-  // margin: 0 15px;
 
   width: 270px;
   min-height: 400px;
@@ -17,6 +16,7 @@
   text-align: center;
 
   transition: all .2s linear;
+
 
   &:hover {
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
@@ -112,6 +112,7 @@
   border-radius: 10px 0px 0px 0px;
   @extend %border;
 }
+
 // .catalog {
 //   margin: 0;
 // }

@@ -7,6 +7,12 @@
   padding-bottom: 85px;
 }
 
+.radioBtns {
+  @include media (sm) {
+    @include flex(column, flex-start);
+  }
+}
+
 .wrapInput {
   position: relative;
 }
@@ -48,4 +54,8 @@
   @extend %border;
 
   transform: translateX(-100%);
+
+  @include media (xs) {
+    width: 100px;
+  }
 }

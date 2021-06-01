@@ -13,14 +13,12 @@ function Banner() {
   return (
 
     <div className={s.banner}>
-      <div className={s.wrapImgs}>
-        <img className={s.atv} src={atv} alt="atv" />
-        <img className={s.utv} src={utv} alt="utv" />
-      </div>
-      <h3 className={s.title}>CКИДКИ <br/> на все запчасти до 70%</h3>
+      <img className={`${s.img} ${s.atv}`} src={atv}  alt="atv" />
+      <img className={`${s.img} ${s.utv}`} src={utv} alt="utv" />
+      <h3 className={s.title}>CКИДКИ  на&nbsp;все&nbsp;запчасти до 70%</h3>
 
       <Link to={`/catalog`}>
-      <button className={s.btn}>Посмотреть все</button>
+        <button className={s.btn}>Посмотреть все</button>
       </Link>
     </div>
   );

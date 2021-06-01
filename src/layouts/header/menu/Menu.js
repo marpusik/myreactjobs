@@ -35,7 +35,6 @@ function Menu() {
           <MenuLink text="Запчасти"/>
         </li>
 
-
       </ul>
 
 

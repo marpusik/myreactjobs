@@ -12,13 +12,13 @@ $primary-opacity: rgba($primary,.7);
 
 
 $breakpoints: (
-    xs: 575.8px,
-    sm: 767.8px,
-    md: 991.8px,
+    xs: 574.8px,
+    sm: 766.8px,
+    md: 990.8px,
+    lg: 1023.8px,
     xl: 1199.8px,
     xxl: 1280px
 );
-
 
 // @mixin media($width, $type:max) {
 //     @if map_has_key($breakpoints, $width) {

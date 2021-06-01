@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import s from "./Header.module.scss";
 import HeaderLink from "./headerLink/HeaderLink";
@@ -9,9 +9,21 @@ import personal from "./../../assets/icons/PersonalIcon.svg";
 import Menu from "./menu/Menu";
 import { ReactComponent as Basket } from './../../assets/icons/BasketIcon.svg';
 import BasketCounter from "./basketCounter/BasketCounter";
+import Mobile from "./mobile/Mobile";
+import Burger from "./burger/Burger";
+
+
+
 
 
 function Header() {
+
+ const [showMenu, setShowMenu] = useState(false);
+
+ const handleOnClick = () => {
+  setShowMenu(!showMenu)
+ }
+
   return (
     <>
     <header className={s.header}>
@@ -66,6 +78,8 @@ function Header() {
       </nav>
     </header>
     <Menu/>
+    <Burger showMenu={showMenu} handleOnClick={handleOnClick}/>
+    <Mobile showMenu={showMenu}/>
    </>
   );
 }
