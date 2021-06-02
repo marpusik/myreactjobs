@@ -27,7 +27,7 @@ function Social() {
                                     src={facebook}
                                     alt=""/></a>
                 </li>
-            <li className={s.social__item}>
+            <li className={s.social__item__you}>
                 <a className="social__link"
                    href="tut.by"><img className="youtube"
                                 src={youtube}
